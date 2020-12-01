@@ -1,0 +1,80 @@
+{
+  "kind": "youtube#video",
+  "etag": "-bkLar6VrzFmoxkkJGyl33ajQXQ",
+  "id": "3UFZfaWQdtA",
+  "snippet": {
+    "publishedAt": "2020-10-12T03:25:17Z",
+    "channelId": "UCqQo7ewe87aYAe7ub5UqXMw",
+    "title": "LeBron James Postgame Interview - Game 6 | Heat vs Lakers | October 11, 2020 NBA Finals",
+    "description": "📌 SHOP OUR LAKERS CHAMPIONSHIP MERCH: https://hoh.world/nemp8\n📌 Follow our Instagram: https://www.instagram.com/houseofhighlights/\n📌 Follow our TikTok: \nhttps://www.tiktok.com/@houseofhighlights\n📌 Follow our Facebook: https://www.facebook.com/houseofhighlights1\n📌 Follow our Twitter: https://twitter.com/HoHighlights\n📌 SUBSCRIBE, LIKE & COMMENT for MORE!\n------------------\n▶️ WATCH HOH Originals: https://www.youtube.com/playlist?list=PL_HppZy-GwSzf1Ot-A4MIJTfqF9mm0WBT\n▶️ WATCH TTW Podcasts: https://www.youtube.com/playlist?list=PL_HppZy-GwSwGkOvnE3gUxvlIBEl3Yo-5\n▶️ WATCH Instagram Moments: https://www.youtube.com/playlist?list=PL_HppZy-GwSz3ngOnW-KrExOScABfYfTi\n▶️ WATCH 2019-20 Players Highlights: https://www.youtube.com/playlist?list=PL_HppZy-GwSzO5avP_DTAgtHuVFSsSrRr\n▶️ WATCH 2019-20 Full Game Highlights: https://www.youtube.com/playlist?list=PL_HppZy-GwSzraIU44yYfSb3PW7Q8V6mh\n▶️ WATCH 2019-20 Best of NBA: https://www.youtube.com/playlist?list=PL_HppZy-GwSznNzog1_eJt7Y-Z4Uci_22\n\n#HouseofHighlights #NBA",
+    "thumbnails": {
+      "default": {
+        "url": "https://i.ytimg.com/vi/3UFZfaWQdtA/default.jpg",
+        "width": 120,
+        "height": 90
+      },
+      "medium": {
+        "url": "https://i.ytimg.com/vi/3UFZfaWQdtA/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+      },
+      "high": {
+        "url": "https://i.ytimg.com/vi/3UFZfaWQdtA/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+      },
+      "standard": {
+        "url": "https://i.ytimg.com/vi/3UFZfaWQdtA/sddefault.jpg",
+        "width": 640,
+        "height": 480
+      },
+      "maxres": {
+        "url": "https://i.ytimg.com/vi/3UFZfaWQdtA/maxresdefault.jpg",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "channelTitle": "House of Highlights",
+    "tags": [
+      "lakers vs heat",
+      "lakers vs heat 2020",
+      "lakers vs heat 2020 nba finals",
+      "los angeles lakers",
+      "miami heat",
+      "2020 nba finals",
+      "2020 nba finals full game",
+      "2020 nba finals full highlights",
+      "nba",
+      "basketball",
+      "long full game highlights",
+      "nba full game highlights",
+      "lebron james",
+      "lebron postgame interview",
+      "lebron",
+      "lebron james postgame interview",
+      "lebron james interview",
+      "lebron interview",
+      "lakers post game interview",
+      "post game interview",
+      "nba post game interview",
+      "lakers interview"
+    ],
+    "categoryId": "17",
+    "liveBroadcastContent": "none",
+    "localized": {
+      "title": "LeBron James Postgame Interview - Game 6 | Heat vs Lakers | October 11, 2020 NBA Finals",
+      "description": "📌 SHOP OUR LAKERS CHAMPIONSHIP MERCH: https://hoh.world/nemp8\n📌 Follow our Instagram: https://www.instagram.com/houseofhighlights/\n📌 Follow our TikTok: \nhttps://www.tiktok.com/@houseofhighlights\n📌 Follow our Facebook: https://www.facebook.com/houseofhighlights1\n📌 Follow our Twitter: https://twitter.com/HoHighlights\n📌 SUBSCRIBE, LIKE & COMMENT for MORE!\n------------------\n▶️ WATCH HOH Originals: https://www.youtube.com/playlist?list=PL_HppZy-GwSzf1Ot-A4MIJTfqF9mm0WBT\n▶️ WATCH TTW Podcasts: https://www.youtube.com/playlist?list=PL_HppZy-GwSwGkOvnE3gUxvlIBEl3Yo-5\n▶️ WATCH Instagram Moments: https://www.youtube.com/playlist?list=PL_HppZy-GwSz3ngOnW-KrExOScABfYfTi\n▶️ WATCH 2019-20 Players Highlights: https://www.youtube.com/playlist?list=PL_HppZy-GwSzO5avP_DTAgtHuVFSsSrRr\n▶️ WATCH 2019-20 Full Game Highlights: https://www.youtube.com/playlist?list=PL_HppZy-GwSzraIU44yYfSb3PW7Q8V6mh\n▶️ WATCH 2019-20 Best of NBA: https://www.youtube.com/playlist?list=PL_HppZy-GwSznNzog1_eJt7Y-Z4Uci_22\n\n#HouseofHighlights #NBA"
+    },
+    "defaultAudioLanguage": "en-US"
+  },
+  "statistics": {
+    "viewCount": "1333171",
+    "likeCount": "23651",
+    "dislikeCount": "2012",
+    "favoriteCount": "0",
+    "commentCount": "5124"
+  },
+  "player": {
+    "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/3UFZfaWQdtA\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+  }
+}
