@@ -1,11 +1,14 @@
 import { Head } from "@next";
+import { Layout, Drawer } from "components/common";
 
 export default function Chaneel({ channelId }) {
   return (
-    <>
+    <Layout>
       <Head title={channelId} />
-      <h1>{channelId}</h1>;
-    </>
+      <Drawer>
+        <h1>channel: {channelId}</h1>
+      </Drawer>
+    </Layout>
   );
 }
 

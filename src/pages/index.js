@@ -1,8 +1,8 @@
-import { Head, Link } from "@next";
+import { Link } from "@next";
 import { makeStyles } from "@material-ui/core/styles";
-import { Layout, Card } from "components/common";
-import { search } from "apis/youtube";
-import data from "data/search";
+import { Layout, Card, Drawer } from "components/common";
+import * as youtube from "apis/youtube";
+import data from "data/search.json";
 
 const useStyle = makeStyles((theme) => ({
   list: {
@@ -24,37 +24,42 @@ export default function Home({ data }) {
   console.log(data);
   return (
     <Layout>
-      {!virtual ? (
-        JSON.stringify(data, null, 4)
-      ) : (
-        <ul className={classes.list}>
-          {data.items.map(({ id, snippet = {} }) => {
-            const {
-              title,
-              channelTitle,
-              thumbnails = {},
-              resourceId = {},
-            } = snippet;
-            return (
-              <Link
-                href={{ pathname: "/watch", query: { v: id.videoId } }}
-                key={id.videoId}
-                className={classes.link}
-              >
-                <Card
-                  title={title}
-                  channelTitle={channelTitle}
-                  image={{
-                    width: thumbnails.medium?.width,
-                    height: thumbnails.medium?.height,
-                    src: thumbnails.medium?.url,
-                  }}
-                />
-              </Link>
-            );
-          })}
-        </ul>
-      )}
+      <Drawer>
+        {!virtual ? (
+          JSON.stringify(data, null, 4)
+        ) : (
+          <ul className={classes.list}>
+            {data.items.map(({ id, snippet = {} }) => {
+              const {
+                title,
+                channelTitle,
+                thumbnails = {},
+                resourceId = {},
+              } = snippet;
+              return (
+                <Link
+                  href={{ pathname: "/watch", query: { v: id.videoId } }}
+                  key={id.videoId}
+                  className={classes.link}
+                >
+                  <Card
+                    title={title}
+                    channel={{
+                      id: snippet?.channelId,
+                      title: snippet?.channelTitle,
+                    }}
+                    image={{
+                      width: thumbnails.medium?.width,
+                      height: thumbnails.medium?.height,
+                      src: thumbnails.medium?.url,
+                    }}
+                  />
+                </Link>
+              );
+            })}
+          </ul>
+        )}
+      </Drawer>
     </Layout>
   );
 }
@@ -66,7 +71,10 @@ export async function getServerSideProps() {
     };
   } else {
     try {
-      const res = await search();
+      const res = await youtube.search({
+        q: "Chris Paul",
+      });
+      console.log(res);
       if (res?.status === 200) {
         return {
           props: {

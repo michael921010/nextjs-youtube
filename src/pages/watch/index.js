@@ -65,14 +65,23 @@ const useStyle = makeStyles((theme) => ({
   },
 }));
 
-const virtual = true;
+const defaultQuantity = 4;
+const virtual = !true;
 export default function Watch({ data }) {
   const [expanded, setExpanded] = useState(false);
-  const showQuantity = useMemo(() => (expanded ? Infinity : 4), [expanded]);
-  const classes = useStyle({ expanded });
+  const showQuantity = useMemo(() => (expanded ? Infinity : defaultQuantity), [
+    expanded,
+  ]);
+  const classes = useStyle();
 
   console.log(data);
   const { id, snippet, statistics, player } = data;
+
+  const description = useMemo(() => snippet.description.split(/\n/).slice(0), [
+    snippet.description,
+    showQuantity,
+  ]);
+  const showExpand = description.length > defaultQuantity;
 
   return (
     <Layout>
@@ -102,19 +111,18 @@ export default function Watch({ data }) {
               {snippet.channelTitle}
             </Typography>
           </Link>
-          {snippet.description
-            .split(/\n/)
-            .splice(0, showQuantity)
-            .map((s, i) => (
-              <Description key={i} msg={s} />
-            ))}
+          {description.splice(0, showQuantity).map((s, i) => (
+            <Description key={i} msg={s} />
+          ))}
         </div>
-        <Typography
-          className={classes.expand}
-          onClick={() => setExpanded((v) => !v)}
-        >
-          {expanded ? "只顯示部份資訊" : "顯示完整資訊"}
-        </Typography>
+        {showExpand && (
+          <Typography
+            className={classes.expand}
+            onClick={() => setExpanded((v) => !v)}
+          >
+            {expanded ? "只顯示部份資訊" : "顯示完整資訊"}
+          </Typography>
+        )}
         <Divider className={classes.divider} />
       </div>
     </Layout>

@@ -1,13 +1,6 @@
-import { useState, useCallback, useEffect } from "react";
-import {
-  IconButton,
-  Badge,
-  MenuItem,
-  Menu,
-  Box,
-  useMediaQuery,
-} from "@material-ui/core";
-import { withStyles, useTheme } from "@material-ui/core/styles";
+import { useState, useCallback } from "react";
+import { IconButton, Badge, MenuItem, Menu, Box } from "@material-ui/core";
+import { withStyles } from "@material-ui/core/styles";
 import {
   Mail,
   Notifications,
@@ -26,9 +19,6 @@ const Section = withStyles((theme) => ({
 
 const mobileMenuId = "primary-search-account-menu-mobile";
 export default function MobileMenu() {
-  const theme = useTheme();
-  const isDesktopSize = useMediaQuery(theme.breakpoints.up("md"));
-
   const [anchorEl, setAnchorEl] = useState(null);
   const isMenuOpen = Boolean(anchorEl);
 
@@ -41,10 +31,6 @@ export default function MobileMenu() {
     e.preventDefault();
     setAnchorEl(e.currentTarget);
   }, []);
-
-  useEffect(() => {
-    setAnchorEl(null);
-  }, [isDesktopSize]);
 
   return (
     <>

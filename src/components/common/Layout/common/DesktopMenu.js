@@ -1,13 +1,6 @@
-import { useState, useCallback, useEffect } from "react";
-import {
-  IconButton,
-  Badge,
-  MenuItem,
-  Menu,
-  Box,
-  useMediaQuery,
-} from "@material-ui/core";
-import { withStyles, useTheme } from "@material-ui/core/styles";
+import { useState, useCallback } from "react";
+import { IconButton, Badge, MenuItem, Menu, Box } from "@material-ui/core";
+import { withStyles } from "@material-ui/core/styles";
 import { Notifications, AccountCircle, Mail } from "@material-ui/icons";
 
 const Section = withStyles((theme) => ({
@@ -21,9 +14,6 @@ const Section = withStyles((theme) => ({
 
 const menuId = "primary-search-account-menu";
 export default function DesktopMenu() {
-  const theme = useTheme();
-  const isMobileSize = useMediaQuery(theme.breakpoints.down("sm"));
-
   const [anchorEl, setAnchorEl] = useState(null);
   const isMenuOpen = Boolean(anchorEl);
 
@@ -36,10 +26,6 @@ export default function DesktopMenu() {
     e.preventDefault();
     setAnchorEl(e.currentTarget);
   }, []);
-
-  useEffect(() => {
-    setAnchorEl(null);
-  }, [isMobileSize]);
 
   return (
     <>

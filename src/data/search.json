@@ -1,0 +1,1559 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "iAeR0h4SO-w1lKaNMQ1QGWKAXV8",
+  "nextPageToken": "CDIQAA",
+  "regionCode": "TW",
+  "pageInfo": { "totalResults": 1000000, "resultsPerPage": 50 },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "zzdn_sFnmx8ZqFaNzkjXQ9PFeEs",
+      "id": { "kind": "youtube#video", "videoId": "_qPz6KYI4Bk" },
+      "snippet": {
+        "publishedAt": "2020-09-01T04:15:43Z",
+        "channelId": "UCqq7RYDRwrCLJuZqENPv-BQ",
+        "title": "Chris Paul&#39;s Full Game 6 Highlights: 28 PTS vs Rockets | 2020 NBA Playoffs - 8.31.20",
+        "description": "28 points (10-20 FG, 3-6 3P, 5-5 FT) • 7 rebounds • 3 assists • 3 steals, 0 blocks, 0 turnovers, 1 fouls • 20 +/- • 40 minutes ▻ Box Score: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_qPz6KYI4Bk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_qPz6KYI4Bk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_qPz6KYI4Bk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SEF-Oklahoma",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-01T04:15:43Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "qIdmD1kRQXI2Cut9qGipWKtJDaY",
+      "id": { "kind": "youtube#video", "videoId": "DPtZ0a1tWKk" },
+      "snippet": {
+        "publishedAt": "2020-10-10T10:00:15Z",
+        "channelId": "UCR2wZueZJfzRQ6st8Wti4ow",
+        "title": "控球的魔術！CP3如何為隊友製造空檔？｜【NBA球員分析】Chris Paul",
+        "description": "嘿是的大家好難得做了一點熱門的玩意不過這裡還是得說一下並不是說純控就一定比攻擊型控球好假如攻擊型控球的得分破壞力夠高且牽引防守後分球的水準也足夠 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/DPtZ0a1tWKk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/DPtZ0a1tWKk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/DPtZ0a1tWKk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Sky's NBA talk",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-10T10:00:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "mM35FJqVHrnMJMaObwEkPDwczH8",
+      "id": { "kind": "youtube#video", "videoId": "t3S_8QSPDng" },
+      "snippet": {
+        "publishedAt": "2018-05-09T02:20:55Z",
+        "channelId": "UCqQo7ewe87aYAe7ub5UqXMw",
+        "title": "Chris Paul Full Game 5 Highlights Jazz vs Rockets 2018 NBA Playoffs - 41 Pts, 10 Ast, 7 Reb!",
+        "description": "Utah Jazz vs Houston Rockets - Game 5 - Highlights - May 8, 2018 | 2018 NBA Playoffs ✔️ Subscribe, Like & Comment for More! ✔️ --------- Follow our ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/t3S_8QSPDng/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/t3S_8QSPDng/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/t3S_8QSPDng/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "House of Highlights",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-05-09T02:20:55Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "l11LB3xoVBRQo95i9UDwuGtheoY",
+      "id": { "kind": "youtube#video", "videoId": "GoRXpOofFTA" },
+      "snippet": {
+        "publishedAt": "2020-04-04T05:00:02Z",
+        "channelId": "UC9r5SR5V8-YS4_I3T_0VezA",
+        "title": "｜CP3 克里斯·保羅 (Chris Paul) 二十個最有創意令人意想不到的運球過人｜",
+        "description": "歡迎大家到以下網站選購：https://SportzCases.com -使用優惠代碼為：HighlightNBA -謝謝大家觀看，按下訂閱已便觀看更多精彩影片。 -希望大家讚好短片。 -你們的 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/GoRXpOofFTA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/GoRXpOofFTA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/GoRXpOofFTA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Highlight NBA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-04-04T05:00:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "KjgHyVKpkdcAL5uVwtQ6-G_M2ss",
+      "id": { "kind": "youtube#video", "videoId": "yBo5j7z6SKo" },
+      "snippet": {
+        "publishedAt": "2020-01-30T15:22:23Z",
+        "channelId": "UCUrLr7YtzUqTlTI1Q8hgqnA",
+        "title": "Chris Paul THRIVING In Oklahoma City! Best 19-20 Highlights | CLIP SESSION",
+        "description": "Chris Paul Thunder Highlights with some replay angles 1080p 60fps ▻ Business Contact: https://goo.gl/uojRHD ▻ Follow on Instagram: https://goo.gl/sba7zb ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yBo5j7z6SKo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yBo5j7z6SKo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yBo5j7z6SKo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "MaxaMillion711",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-01-30T15:22:23Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "obGMXbNtNiJu4Q0wL8pJxd5LAsU",
+      "id": { "kind": "youtube#video", "videoId": "y5yL3qVBWDQ" },
+      "snippet": {
+        "publishedAt": "2020-01-05T19:50:51Z",
+        "channelId": "UCLMvsOHkJywGsUy8WElracQ",
+        "title": "Chris Paul being the most savage nba player for 5 minutes straight",
+        "description": "I swear I'll upload more.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/y5yL3qVBWDQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/y5yL3qVBWDQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/y5yL3qVBWDQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The NBA in Minutes",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-01-05T19:50:51Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "b7P-OSG_cqZ4zs76I3sddoE110M",
+      "id": { "kind": "youtube#video", "videoId": "NZdbMehDEQ4" },
+      "snippet": {
+        "publishedAt": "2020-07-16T11:00:04Z",
+        "channelId": "UCiWLfSweyRNmLpgEHekhoAg",
+        "title": "Chris Paul’s elbow jumper is one of the deadliest shots in the NBA | Signature Shots",
+        "description": "In this episode of Signature Shots, ESPN analyst Kirk Goldsberry, examines the midrange wizardry of Chris Paul. CP3 has established himself as one of the ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NZdbMehDEQ4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NZdbMehDEQ4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NZdbMehDEQ4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-07-16T11:00:04Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ySlkWYj_PTVK9CxyCc6gQJUknDo",
+      "id": { "kind": "youtube#video", "videoId": "42ZUzXiocVM" },
+      "snippet": {
+        "publishedAt": "2020-09-01T04:04:33Z",
+        "channelId": "UCv6gH4f6zw8L5LOM-735dwA",
+        "title": "Chris Paul Taunts James Harden After Russell Westbrook Turns Into JR Smith 2.0 With Dumbest Plays！",
+        "description": "Hit The Notifications Bell So You Won't Miss Anything About NBA Subscribe this channel Now！ DISCLAIMER - All clips property of the NBA. (For Funny ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/42ZUzXiocVM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/42ZUzXiocVM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/42ZUzXiocVM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "DCKilla",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-01T04:04:33Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-V_9dEhCC9OFlPp0zWTaKTwSwAQ",
+      "id": { "kind": "youtube#video", "videoId": "GvOUOu2EpIY" },
+      "snippet": {
+        "publishedAt": "2020-08-28T14:00:06Z",
+        "channelId": "UCUrLr7YtzUqTlTI1Q8hgqnA",
+        "title": "Behold Chris Paul : THE POINT GOD! Best 2007-08 Highlights | GOAT SZN",
+        "description": "Best Chris Paul highlights from 2007-2008 season. Thanks to these channels for the footage: https://www.youtube.com/user/kobebryantworld ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/GvOUOu2EpIY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/GvOUOu2EpIY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/GvOUOu2EpIY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "MaxaMillion711",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-28T14:00:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "hQPc6k52QhHdN-xdiYRH-MgzPsU",
+      "id": { "kind": "youtube#video", "videoId": "o20IOBGHLjY" },
+      "snippet": {
+        "publishedAt": "2020-11-16T21:22:12Z",
+        "channelId": "UCiWLfSweyRNmLpgEHekhoAg",
+        "title": "How good are the Phoenix Suns with Chris Paul? | The Jump",
+        "description": "The Jump's Jorge Sedano, Zach Lowe and Dave McMenamin assess the Phoenix Suns' starting lineup after agreeing to a trade to acquire Chris Paul from the ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/o20IOBGHLjY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/o20IOBGHLjY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/o20IOBGHLjY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-16T21:22:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "iVKTIQceJhtQGHr30ti5OJRLO34",
+      "id": { "kind": "youtube#video", "videoId": "UK7ElFo_lIc" },
+      "snippet": {
+        "publishedAt": "2013-03-27T09:41:08Z",
+        "channelId": "UCA3as_zYUHGXNImNICA26uw",
+        "title": "Chris Paul HD Career Mix - Born to Do",
+        "description": "Chris Paul is nothing but amazing on the basketball court, I don't need to say more, just watch the video yourselves and agree with me :) The song is \"Born to ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/UK7ElFo_lIc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/UK7ElFo_lIc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/UK7ElFo_lIc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "eldhand",
+        "liveBroadcastContent": "none",
+        "publishTime": "2013-03-27T09:41:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "2AeeIp1iBKyn6JQ2UIY3sZFwDUk",
+      "id": { "kind": "youtube#video", "videoId": "v_D_2eDsQfk" },
+      "snippet": {
+        "publishedAt": "2020-10-25T18:30:02Z",
+        "channelId": "UC6K-_cvzQldsxdHUvVnX9ug",
+        "title": "Chris Paul&#39;s Pick &amp; Roll Game Broken Down to a Science 🔬",
+        "description": "The pick and roll screen is evolving every season, but CP3 has remained at the top of the top for ball-screen dominant guards. The way he orchestrates it is ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/v_D_2eDsQfk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/v_D_2eDsQfk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/v_D_2eDsQfk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "By Any Means Basketball",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-25T18:30:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "FU1F-WL5a5VQnFHnRVikUYIm2ik",
+      "id": { "kind": "youtube#video", "videoId": "j4TFuZUqbk0" },
+      "snippet": {
+        "publishedAt": "2020-11-04T05:16:16Z",
+        "channelId": "UCiI3ozq1VQmnDF_X4BbUbYQ",
+        "title": "經典時刻『Chris Paul生涯最强一戰！帶著一條傷退絕殺馬刺,Duncan也被折服！』【NBA】球哥説",
+        "description": "Chris Paul生涯最强戰役，絕殺馬刺卻敵不過命中注定！",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/j4TFuZUqbk0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/j4TFuZUqbk0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/j4TFuZUqbk0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "球哥说",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-04T05:16:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "u9NiPciAxzGxoFUIafKPsXpSu-M",
+      "id": { "kind": "youtube#video", "videoId": "AhRkTNgkLDY" },
+      "snippet": {
+        "publishedAt": "2020-11-11T18:37:49Z",
+        "channelId": "UCLXzq85ijg2LwJWFrz4pkmw",
+        "title": "Chris Broussard reacts to Phoenix Suns looking to trade for Chris Paul | NBA | UNDISPUTED",
+        "description": "The Phoenix Suns ended their season on a hot streak going 8-0 in the Orlando Bubble. Now they may be getting more help to kickstart the next season.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/AhRkTNgkLDY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/AhRkTNgkLDY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/AhRkTNgkLDY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Skip and Shannon: UNDISPUTED",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-11T18:37:49Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "79XCLsVFYHcIV0Ys0qqhh8WXibg",
+      "id": { "kind": "youtube#video", "videoId": "xRtF5ZYZVuI" },
+      "snippet": {
+        "publishedAt": "2020-02-22T04:54:35Z",
+        "channelId": "UCVSSpcmZD2PwPBqb8yKQKBA",
+        "title": "Chris Paul’s clutch 29-point performance in Thunder vs. Nuggets | 2019-20 NBA Highlights",
+        "description": "(Description) #NBA ✓ Subscribe to ESPN+: https://plus.espn.com/ ✓ Get the ESPN App: http://www.espn.com/espn/apps/espn ✓ Subscribe to NBA on ESPN on ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xRtF5ZYZVuI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xRtF5ZYZVuI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xRtF5ZYZVuI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "NBA on ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-02-22T04:54:35Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "YUe5gJDj74vNe_ieHuBy3vWKBgw",
+      "id": { "kind": "youtube#video", "videoId": "HHvB0Q7hhjo" },
+      "snippet": {
+        "publishedAt": "2020-08-23T01:30:43Z",
+        "channelId": "UCqq7RYDRwrCLJuZqENPv-BQ",
+        "title": "Chris Paul&#39;s Full Game 3 Highlights: 26 PTS vs Rockets | 2020 NBA Playoffs - 8.22.20",
+        "description": "26 points (11-20 FG, 4-6 3P, 0-1 FT) • 6 rebounds • 5 assists • 1 steals, 1 blocks, 4 turnovers, 5 fouls • 15 +/- • 41 minutes ▻ Box Score: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HHvB0Q7hhjo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HHvB0Q7hhjo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HHvB0Q7hhjo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SEF-Oklahoma",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-23T01:30:43Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "7hUvGY4bg7X5O1LiGoQl2tEkFWI",
+      "id": { "kind": "youtube#video", "videoId": "S84EjXe-lk0" },
+      "snippet": {
+        "publishedAt": "2020-11-16T22:45:01Z",
+        "channelId": "UCiWLfSweyRNmLpgEHekhoAg",
+        "title": "Woj details Chris Paul&#39;s trade to the Suns | The Jump",
+        "description": "Dave McMenamin joins Jorge Sedano on The Jump to discuss Chris Paul being traded from the Oklahoma City Thunder to the Phoenix Suns. Adrian ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/S84EjXe-lk0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/S84EjXe-lk0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/S84EjXe-lk0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-16T22:45:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "jaRMxVAQ92S7ST5L9E0DduxImwc",
+      "id": { "kind": "youtube#video", "videoId": "1IbDKHbYweo" },
+      "snippet": {
+        "publishedAt": "2020-07-14T23:30:09Z",
+        "channelId": "UC4MVH2dkQ0SR4n1NA_ES2KQ",
+        "title": "Chris Paul - Superb Separation 19/20",
+        "description": "Chris Paul. 10x NBA-All Star. 2013's All-Star Game Most Valuable Player. 4x All-NBA First Team. 3x All-NBA Second Team. 2011 All-NBA Third Team.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1IbDKHbYweo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1IbDKHbYweo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1IbDKHbYweo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Evin Gualberto",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-07-14T23:30:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "xJimEVOkgPvEknMUBik3J5XOQk8",
+      "id": { "kind": "youtube#video", "videoId": "xCCfF3J_BkA" },
+      "snippet": {
+        "publishedAt": "2018-10-21T05:38:17Z",
+        "channelId": "UCiWLfSweyRNmLpgEHekhoAg",
+        "title": "Chris Paul, Rajon Rondo and Brandon Ingram ejected after Rockets and Lakers fight | NBA Highlights",
+        "description": "In the fourth quarter between the Houston Rockets and Los Angeles Lakers, Brandon Ingram gets fouled by James Harden on a drive to the hoop. A scrum ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xCCfF3J_BkA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xCCfF3J_BkA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xCCfF3J_BkA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-10-21T05:38:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4vZ6_5R6lk3VQVuzXuCj94eGtog",
+      "id": { "kind": "youtube#video", "videoId": "kFA6j8ccDqw" },
+      "snippet": {
+        "publishedAt": "2020-11-17T09:29:20Z",
+        "channelId": "UC11OUnQ_H-dso11mAA9xcqw",
+        "title": "Chris Paul空降鳳凰城，太陽迎來崛起劍指總冠軍！【NBA】球學家",
+        "description": "Chris Paul加盟太陽，搭檔70分先生衝擊總冠軍！ 成为此频道的会员即可获享以下福利： https://www.youtube.com/channel/UC11OUnQ_H-dso11mAA9xcqw/join 更 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kFA6j8ccDqw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kFA6j8ccDqw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kFA6j8ccDqw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "球學家",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-17T09:29:20Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "KNJr6oWaaDoTWuVEKr9x3qLWYu8",
+      "id": { "kind": "youtube#video", "videoId": "3z6yv7olOvg" },
+      "snippet": {
+        "publishedAt": "2020-11-16T21:01:21Z",
+        "channelId": "UCp3dgMf1OUP2XqOpyOY2bzQ",
+        "title": "Chris Paul TRADED to The Suns! Why Devin Booker Will STAY in Phoenix!",
+        "description": "Chris Paul TRADED to The Phoenix Suns! NBA Trades are getting CRAZY! The Real Ones Follow Me On Twitter @MikeKorz SUBSCRIBE TO MY 2ND ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3z6yv7olOvg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3z6yv7olOvg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3z6yv7olOvg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Mike Korzemba",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-16T21:01:21Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "P2NsnqlVPMdBQzbPjkKY_NPLb-U",
+      "id": { "kind": "youtube#video", "videoId": "YO5HEc-deF8" },
+      "snippet": {
+        "publishedAt": "2020-11-17T15:52:41Z",
+        "channelId": "UCiWLfSweyRNmLpgEHekhoAg",
+        "title": "Stephen A. reacts to the Suns acquiring Chris Paul | First Take",
+        "description": "Stephen A. Smith, Max Kellerman and Kendrick Perkins discuss whether the Phoenix Suns are a threat to the top teams in the Western Conference after ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/YO5HEc-deF8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/YO5HEc-deF8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/YO5HEc-deF8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-17T15:52:41Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "LMh6qmp29Ho2ePL6iv3cXmGYt2s",
+      "id": { "kind": "youtube#video", "videoId": "4ADnvq6o8zU" },
+      "snippet": {
+        "publishedAt": "2020-10-30T19:01:17Z",
+        "channelId": "UCatlyoGLwmdnidMJZTJnSbg",
+        "title": "Chris Paul is TOO GOOD To Retire Without A Title",
+        "description": "CP3 enters this offseason as the league's preeminent trade target, and it doesn't take a rocket scientist to understand why. But Paul is no youngster, and he ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4ADnvq6o8zU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4ADnvq6o8zU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4ADnvq6o8zU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "theScore",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-30T19:01:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "3wS9ashb4OUe163viTCyVaB7Zrs",
+      "id": { "kind": "youtube#video", "videoId": "LLqOrW6Q4J4" },
+      "snippet": {
+        "publishedAt": "2020-08-06T01:36:42Z",
+        "channelId": "UCqq7RYDRwrCLJuZqENPv-BQ",
+        "title": "Chris Paul&#39;s Full Highlights: 21 PTS, 7 REB, 6 AST vs Lakers | 2019-20 NBA Season - 8.5.20",
+        "description": "21 points (8-12 FG, 1-3 3P, 4-4 FT) • 7 rebounds • 6 assists • 1 steals, 0 blocks, 5 turnovers, 3 fouls • 25 +/- • 31 minutes ▻ Box Score: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/LLqOrW6Q4J4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/LLqOrW6Q4J4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/LLqOrW6Q4J4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SEF-Oklahoma",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-06T01:36:42Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "9YedESSQsb1NA8MJcZG3lQbOTBA",
+      "id": { "kind": "youtube#video", "videoId": "RhZZeIvj2f4" },
+      "snippet": {
+        "publishedAt": "2020-10-13T02:00:02Z",
+        "channelId": "UCKjEtnnXEHsXE9IvCb92V7g",
+        "title": "Chris Paul highlights: NCAA tournament top plays",
+        "description": "Before he was dominating defenses in the NBA, Chris Paul led Wake Forest to consecutive NCAA tournaments from 2004-05. Paul won the ACC Rookie of the ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/RhZZeIvj2f4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/RhZZeIvj2f4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/RhZZeIvj2f4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "March Madness",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-13T02:00:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "K5PAWqwXntdX3otCfQHsevRYa0w",
+      "id": { "kind": "youtube#video", "videoId": "ydUiJmq6-ws" },
+      "snippet": {
+        "publishedAt": "2020-11-16T20:09:00Z",
+        "channelId": "UCrIfvcoVTi0r6OMX8IHd7wA",
+        "title": "The TRUTH About The Chris Paul Suns Trade...",
+        "description": "In this video we discuss the NBA trade that sent Chris Paul to the Phoenix Suns from the Oklahoma City Thunder, and what it means for the future moving ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ydUiJmq6-ws/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ydUiJmq6-ws/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ydUiJmq6-ws/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Hoops Reference",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-16T20:09:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "oKirhZvnzWoTunEDVI-RnNWNpZ8",
+      "id": { "kind": "youtube#video", "videoId": "12nWYhQsHbE" },
+      "snippet": {
+        "publishedAt": "2020-11-06T22:30:01Z",
+        "channelId": "UCiWLfSweyRNmLpgEHekhoAg",
+        "title": "Chris Paul trade scenarios [Part 1] | The Jump",
+        "description": "Amin Elhassan joins Rachel Nichols, David Fizdale and Paul Pierce on The Jump to assess trade destinations for Chris Paul, discussing the New York Knicks ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/12nWYhQsHbE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/12nWYhQsHbE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/12nWYhQsHbE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-06T22:30:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "JNplq70mlqIL0FjuJLx8lBiO5h0",
+      "id": { "kind": "youtube#video", "videoId": "Qo8r-BCi27E" },
+      "snippet": {
+        "publishedAt": "2020-11-11T18:39:55Z",
+        "channelId": "UCiWLfSweyRNmLpgEHekhoAg",
+        "title": "Stephen A.: Chris Paul doesn&#39;t want to go to the Lakers | First Take",
+        "description": "Stephen A. Smith and Max Kellerman discuss the best landing spot for PG Chris Paul. #FirstTake #NBA ✔️Subscribe to ESPN+https://plus.espn.com/ ✔️ Get ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Qo8r-BCi27E/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Qo8r-BCi27E/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Qo8r-BCi27E/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-11T18:39:55Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Cy8SRVERAT5lL-EMMN4BfDK2jv4",
+      "id": { "kind": "youtube#video", "videoId": "mJZVW1rdTds" },
+      "snippet": {
+        "publishedAt": "2020-05-22T14:32:18Z",
+        "channelId": "UCCCR6IxqMJOnmBvMszM7m2g",
+        "title": "CHRIS PAUL - Still a Point God! (2019-2020 Season Thunder Highlights)",
+        "description": "A very unexpected season for Chris Paul and the Thunder! Like and Subscribe if you enjoy the video! Get your SportzCases here!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mJZVW1rdTds/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mJZVW1rdTds/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mJZVW1rdTds/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "NiTringo NBA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-05-22T14:32:18Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "kCRRb3Bz8JkzxWWujddz1yK8NoQ",
+      "id": { "kind": "youtube#video", "videoId": "8aNHJS7taiI" },
+      "snippet": {
+        "publishedAt": "2020-03-09T16:00:10Z",
+        "channelId": "UCKbNOpmhmwBuJXXMYOg_txA",
+        "title": "10 Things Chris Paul Can&#39;t Live Without | GQ Sports",
+        "description": "There are a few things Oklahoma City Thunder point guard Chris Paul can't live without when he hits the road. From flavored water to his watch case, these are ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8aNHJS7taiI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8aNHJS7taiI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8aNHJS7taiI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "GQ Sports",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-03-09T16:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "qbzByro1C--DpcPbjN8CoThNcKs",
+      "id": { "kind": "youtube#video", "videoId": "mUR02pGSsxc" },
+      "snippet": {
+        "publishedAt": "2020-11-13T05:38:13Z",
+        "channelId": "UC8-Th83bH_thdKZDJCrn88g",
+        "title": "Chris Paul Addresses Rumors He&#39;s Leaving Oklahoma City Thunder for the Phoenix Suns",
+        "description": "Chris Paul talks about his role in devising the NBA bubble, challenging President Obama for a game of basketball and creating The Social Change Fund with ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mUR02pGSsxc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mUR02pGSsxc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mUR02pGSsxc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Tonight Show Starring Jimmy Fallon",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-13T05:38:13Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "PkdJW4ttTKwAf3v52GCOHaKCbnk",
+      "id": { "kind": "youtube#video", "videoId": "6iMqaWORWtc" },
+      "snippet": {
+        "publishedAt": "2020-09-14T19:57:18Z",
+        "channelId": "UCrTPB3b6wjwjspbbdcxRHng",
+        "title": "Chris Paul Dunking Compilation ᴴᴰ",
+        "description": "Check out CP3's Dunking Compilation! ▷DISCLAIMER: All clips are property of the NBA. No copyright infringement is intended, all videos are edited to follow ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6iMqaWORWtc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6iMqaWORWtc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6iMqaWORWtc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Basketball Fun",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-14T19:57:18Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "kp1CBMCaZUAYwex11_BKxP2uH9Y",
+      "id": { "kind": "youtube#video", "videoId": "bBnRWSxWgQc" },
+      "snippet": {
+        "publishedAt": "2020-11-06T00:00:08Z",
+        "channelId": "UC11OUnQ_H-dso11mAA9xcqw",
+        "title": "加盟湖人爭冠or去往尼克走向毀滅？Chris Paul的最後一搏！【NBA】球學家",
+        "description": "Chris Paul再轉會，是去湖人爭冠還是在紐約沉淪？ 更多精彩影片： 湖人最大對手出現！金塊一步成爲爭冠勁旅！https://www.youtube.com/watch?v=tI9WwD-IicA ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bBnRWSxWgQc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bBnRWSxWgQc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bBnRWSxWgQc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "球學家",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-06T00:00:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "LtVbCh1oZN26q2WHvs_djRpJfpw",
+      "id": { "kind": "youtube#video", "videoId": "CKC_gl8izb4" },
+      "snippet": {
+        "publishedAt": "2020-08-24T23:04:08Z",
+        "channelId": "UCqq7RYDRwrCLJuZqENPv-BQ",
+        "title": "Chris Paul&#39;s Full Game 4 Highlights: 26 PTS vs Rockets | 2020 NBA Playoffs - 8.24.20",
+        "description": "26 points (10-19 FG, 0-5 3P, 6-6 FT) • 6 rebounds • 3 assists • 3 steals, 0 blocks, 3 turnovers, 3 fouls • 3 +/- • 37 minutes ▻ Box Score: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/CKC_gl8izb4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/CKC_gl8izb4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/CKC_gl8izb4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SEF-Oklahoma",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-24T23:04:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "6aieq5re1eLEOBMdZFLJ5hx3ZYA",
+      "id": { "kind": "youtube#video", "videoId": "gVDzpTxIFXI" },
+      "snippet": {
+        "publishedAt": "2020-11-16T18:40:14Z",
+        "channelId": "UCPE2Utj3Nm5RYPtzwqIm50Q",
+        "title": "[BREAKING NEWS] Colin Report: Thunder trade Chris Paul to Phoenix Suns in blockbuster",
+        "description": "[BREAKING NEWS] Colin Report: Thunder trade Chris Paul to Phoenix Suns in blockbuster.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gVDzpTxIFXI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gVDzpTxIFXI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gVDzpTxIFXI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Undisputed Today",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-16T18:40:14Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ww88QMLmIybx3S6evm2yos76P_g",
+      "id": { "kind": "youtube#video", "videoId": "6ZjhVCeA_-M" },
+      "snippet": {
+        "publishedAt": "2020-11-20T18:00:02Z",
+        "channelId": "UCbPY1Efha9VPRBYW2x1M16A",
+        "title": "How Chris Paul Can Impact Devin Booker&#39;s Career in Phoenix | JJ Redick",
+        "description": "The Oklahoma City Thunder traded Chris Paul to The Pheonix Suns. JJ Redick discusses just how Chris Paul can impact Devin Booker's career in the long-term.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6ZjhVCeA_-M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6ZjhVCeA_-M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6ZjhVCeA_-M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JJ Redick",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-20T18:00:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "QKOoDJXj0YUP_zXvTBtPpozolVQ",
+      "id": { "kind": "youtube#video", "videoId": "W0ZGkrhwGbM" },
+      "snippet": {
+        "publishedAt": "2020-11-17T15:54:37Z",
+        "channelId": "UCiIws_onINIcqZ3SUjSbnVg",
+        "title": "UNDISPUTED | Skip Bayless reacts Chris Paul has turned the Suns into a Western Conference contender",
+        "description": "Undisputed #SkipBayless #ShannonSharpe UNDISPUTED | Skip Bayless reacts Chris Paul has turned the Suns into a Western Conference contender.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/W0ZGkrhwGbM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/W0ZGkrhwGbM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/W0ZGkrhwGbM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Hoàng Bi",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-17T15:54:37Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "onOVTVwXq51Zo_aE3fyMvDEjvkM",
+      "id": { "kind": "youtube#video", "videoId": "JU_aPIzOVEw" },
+      "snippet": {
+        "publishedAt": "2020-11-22T16:00:25Z",
+        "channelId": "UCDRmGMSgrtZkOsh_NQl4_xw",
+        "title": "Chris Paul&#39;s last-ditch, stigma-shattering moment against the Spurs deserves a deep rewind",
+        "description": "Chris Paul can't win big games,” is a sentiment that haunted Chris Paul from his time as a baby-faced Hornet all the way until his robustly-bearded Clipper years.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/JU_aPIzOVEw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/JU_aPIzOVEw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/JU_aPIzOVEw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Secret Base",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-22T16:00:25Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "59zJD3KeF6bohgPriBfrLosJqT0",
+      "id": { "kind": "youtube#video", "videoId": "QY43yW33MEI" },
+      "snippet": {
+        "publishedAt": "2018-10-28T17:17:21Z",
+        "channelId": "UCDybhksuj1SFYc9qFMtdLIg",
+        "title": "How Chris Paul Destroys His Defenders (Film Study)",
+        "description": "FREE ANKLE BREAKER WORKOUT***** https://mailchi.mp/54c8574f74db/anklebreakerprogram For Any Questions Shoot Us A Text: (833) 541 0693 Join ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QY43yW33MEI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QY43yW33MEI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QY43yW33MEI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Courtical Hoops",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-10-28T17:17:21Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "NuuWPPFphIK8tDKBKy5Dvnknwcg",
+      "id": { "kind": "youtube#video", "videoId": "lh5PzP5fBvo" },
+      "snippet": {
+        "publishedAt": "2020-11-17T13:11:34Z",
+        "channelId": "UCiWLfSweyRNmLpgEHekhoAg",
+        "title": "How does the addition of Chris Paul change the Suns&#39; championship outlook? | KJZ",
+        "description": "Keyshawn Johnson, Chris Canty and Zubin Mehenti weigh in on the Oklahoma City Thunder trading PG Chris Paul to the Phoenix Suns and Keyshawn ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/lh5PzP5fBvo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/lh5PzP5fBvo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/lh5PzP5fBvo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-17T13:11:34Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-SLjtz_XHfohzzdN23TY-sRby2k",
+      "id": { "kind": "youtube#video", "videoId": "Q0QGd2l-F6U" },
+      "snippet": {
+        "publishedAt": "2020-11-20T22:00:06Z",
+        "channelId": "UCl2j2uuRfigiLri04SskBUA",
+        "title": "Chris Paul went WAAAAY Back in a Quiz about Himself ⏪ | SLAM Exam",
+        "description": "COP YOUR MERCH: https://shop.slamonline.com We linked with Chris Paul as he took the SLAM Exam. The subject: HIMSELF. We covered playing with JR ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Q0QGd2l-F6U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Q0QGd2l-F6U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Q0QGd2l-F6U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SLAM NBA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-20T22:00:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "UHNXYgOtk10YuSNRQp-d_x4QvL8",
+      "id": { "kind": "youtube#video", "videoId": "LgQJ4mGeGEQ" },
+      "snippet": {
+        "publishedAt": "2020-11-11T22:15:01Z",
+        "channelId": "UCiWLfSweyRNmLpgEHekhoAg",
+        "title": "How Chris Paul could improve the Suns | The Jump",
+        "description": "Chiney Ogwumike, Kendrick Perkins and Zach Lowe react to the Oklahoma City Thunder promoting assistant coach Mark Daigneault to head coach to replace ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/LgQJ4mGeGEQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/LgQJ4mGeGEQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/LgQJ4mGeGEQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-11T22:15:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "GROHx8OF6j-vzQqkjXonUwCjuAk",
+      "id": { "kind": "youtube#video", "videoId": "MaU4mxJGNec" },
+      "snippet": {
+        "publishedAt": "2020-08-23T01:06:39Z",
+        "channelId": "UCv6gH4f6zw8L5LOM-735dwA",
+        "title": "Chris Paul Brawls James Harden Then Shocks Entire Rockets With Point-God Mode！",
+        "description": "Hit The Notifications Bell So You Won't Miss Anything About NBA Subscribe this channel Now！ DISCLAIMER - All clips property of the NBA. (For Funny ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/MaU4mxJGNec/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/MaU4mxJGNec/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/MaU4mxJGNec/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "DCKilla",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-23T01:06:39Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "cZv9FPz89dfgRty5UxwoqSIKM0o",
+      "id": { "kind": "youtube#video", "videoId": "oZOVFc0bLpA" },
+      "snippet": {
+        "publishedAt": "2020-08-13T02:00:33Z",
+        "channelId": "UC9-OpMMVoNP5o10_Iyq7Ndw",
+        "title": "Jimmy Butler Trucks Chris Paul, CP3 Bounces Ball Off Duncan Robinson&#39;s Head",
+        "description": "CP3 isn't afraid of anybody or any situation. That was proven twice over in these two hilarious sequences. Subscribe: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/oZOVFc0bLpA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/oZOVFc0bLpA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/oZOVFc0bLpA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Bleacher Report",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-13T02:00:33Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "jhJyrav_QeRDEaJuPSoQLQ-cqf0",
+      "id": { "kind": "youtube#video", "videoId": "dhZuxabC-FU" },
+      "snippet": {
+        "publishedAt": "2020-07-01T13:00:14Z",
+        "channelId": "UCA1LlVRSsTp8jflTNL8pO9A",
+        "title": "Chris Paul aka CP3 Joins Q and D | Knuckleheads Quarantine: E4 | The Players&#39; Tribune",
+        "description": "Chris Paul, aka CP3, aka Point God, aka NBPA prez, is in the building for this week's episode of Knuckleheads with Quentin Richardson and Darius Miles.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dhZuxabC-FU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dhZuxabC-FU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dhZuxabC-FU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Players' Tribune",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-07-01T13:00:14Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "vqVeIbeVmm4GFrPRr6-ZGlakSWM",
+      "id": { "kind": "youtube#video", "videoId": "1m-_WmUkfLs" },
+      "snippet": {
+        "publishedAt": "2020-08-06T19:02:31Z",
+        "channelId": "UC7BKul-nuX7T97Gbuu1QEYg",
+        "title": "Chris Paul Being the FUNNIEST Man in the League",
+        "description": "I DO NOT OWN ANY OF THE CONTENT USED IN THE VIDEO Please contact me at t.jaybidness@gmail.com if you own any content used and want this video ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1m-_WmUkfLs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1m-_WmUkfLs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1m-_WmUkfLs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "T.Jay",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-06T19:02:31Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "oHu8usFOUsUfcky1YEZvGMef3Cs",
+      "id": { "kind": "youtube#video", "videoId": "6wTpLiIhjbk" },
+      "snippet": {
+        "publishedAt": "2020-11-23T00:30:10Z",
+        "channelId": "UCMEoavphn3GBkUbSWrQ-CNA",
+        "title": "What Chris Paul Brings to the Phoenix Suns",
+        "description": "Chris Paul does a lot, but what sets him apart? We cover that on this video.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6wTpLiIhjbk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6wTpLiIhjbk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6wTpLiIhjbk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Timeline: A Phoenix Suns Channel",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-23T00:30:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "oaDePge6hdBklVxpWg60bmrMck0",
+      "id": { "kind": "youtube#video", "videoId": "9eSR1NOFOB0" },
+      "snippet": {
+        "publishedAt": "2020-11-27T02:38:08Z",
+        "channelId": "UCf1f-beuIPPtmbDsldbp_ZQ",
+        "title": "How CHRIS PAUL Make Bigs More Efficient | Rubio Replacement | Player Breakdown",
+        "description": "So when I heard about the deal, regarding Chris Paul to the Phoenix Suns. My first thought was, is Deandre Ayton going to be an All-star next year? He was ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9eSR1NOFOB0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9eSR1NOFOB0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9eSR1NOFOB0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Franny Film",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-27T02:38:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ti0zuRUonUnR5oqn95cSj83IHPU",
+      "id": { "kind": "youtube#video", "videoId": "5MHzXD_y3bw" },
+      "snippet": {
+        "publishedAt": "2020-11-16T19:00:00Z",
+        "channelId": "UCiWLfSweyRNmLpgEHekhoAg",
+        "title": "The Suns are trading for Chris Paul - Woj | SportsCenter",
+        "description": "Adrian Wojnarowski joins SportsCenter to discuss the news of the Phoenix Suns trading Ricky Rubio, Kelly Oubre Jr. and more to the Oklahoma City Thunder for ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5MHzXD_y3bw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5MHzXD_y3bw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5MHzXD_y3bw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ESPN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-16T19:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "A27pzD6GkdHZ5L6sGx92m9NQGxQ",
+      "id": { "kind": "youtube#video", "videoId": "8TuEBiBuPkE" },
+      "snippet": {
+        "publishedAt": "2020-11-16T19:10:25Z",
+        "channelId": "UC8xZt-P1j-G7ckm0LM2p6eQ",
+        "title": "Chris Paul Traded to The Phoenix Suns...",
+        "description": "My Twitter: https://twitter.com/KOT4Q.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8TuEBiBuPkE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8TuEBiBuPkE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8TuEBiBuPkE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Kenny For Real",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-16T19:10:25Z"
+      }
+    }
+  ]
+}
