@@ -29,30 +29,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const defaultDrawer = { mobileOpen: false, desktopOpen: true };
-
 export default function MyAppBar({ children }) {
   const router = useRouter();
   const classes = useStyles();
-  const { isLgUp, isMdDown } = useContext(MediaContext);
+  const { isMdDown } = useContext(MediaContext);
+  const { handleDrawer } = useContext(LayoutContext);
 
-  const [openDrawer, setOpenDrawer] = useState(defaultDrawer);
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleMenu = useCallback(() => {
-    if (isMdDown) {
-      setOpenDrawer((o) => ({ ...o, mobileOpen: !o.mobileOpen }));
-      return;
-    }
-    if (isLgUp) {
-      setOpenDrawer((o) => ({ ...o, desktopOpen: !o.desktopOpen }));
-      return;
-    }
-  }, [isMdDown, isLgUp]);
-
-  const handleDrawer = useCallback(() => {
-    setOpenDrawer((o) => ({ ...o, mobileOpen: !o.mobileOpen }));
-  }, []);
+    handleDrawer(isMdDown ? "mobileOpen" : "desktopOpen");
+  }, [isMdDown, handleDrawer]);
 
   const handleSearch = useCallback(() => {
     if (searchQuery.trim() !== "") {
@@ -64,41 +51,39 @@ export default function MyAppBar({ children }) {
   }, [searchQuery]);
 
   useEffect(() => {
-    setOpenDrawer((o) => ({ ...o, mobileOpen: false }));
+    handleDrawer("mobileOpen", false);
   }, [isMdDown]);
 
   return (
-    <LayoutContext.Provider value={{ ...openDrawer, handleDrawer }}>
-      <div className={classes.grow}>
-        <AppBar position="fixed" className={classes.root}>
-          <Toolbar>
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleMenu}
-            >
-              <Menu />
-            </IconButton>
-            <Link href="/">
-              <Typography className={classes.title} variant="h6" noWrap>
-                {siteTitle}
-              </Typography>
-            </Link>
-            <SearchBar
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              onSearch={handleSearch}
-            />
+    <div className={classes.grow}>
+      <AppBar position="fixed" className={classes.root}>
+        <Toolbar>
+          <IconButton
+            edge="start"
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleMenu}
+          >
+            <Menu />
+          </IconButton>
+          <Link href="/">
+            <Typography className={classes.title} variant="h6" noWrap>
+              {siteTitle}
+            </Typography>
+          </Link>
+          <SearchBar
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onSearch={handleSearch}
+          />
 
-            <div className={classes.grow} />
-            {isLgUp ? <DesktopMenu /> : <MobileMenu />}
-          </Toolbar>
-        </AppBar>
+          <div className={classes.grow} />
+          {isMdDown ? <MobileMenu /> : <DesktopMenu />}
+        </Toolbar>
+      </AppBar>
 
-        <div className={classes.content}>{children}</div>
-      </div>
-    </LayoutContext.Provider>
+      <div className={classes.content}>{children}</div>
+    </div>
   );
 }

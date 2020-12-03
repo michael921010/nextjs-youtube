@@ -1,7 +1,25 @@
-import { createContext } from "react";
+import { useState, useCallback, createContext } from "react";
 import { useMediaQuery } from "@material-ui/core";
+import { hasData } from "utils";
 
 export const LayoutContext = createContext();
+
+const defaultDrawer = { mobileOpen: false, desktopOpen: true };
+export const LayoutProvider = ({ children }) => {
+  const [openDrawer, setOpenDrawer] = useState(defaultDrawer);
+
+  const handleDrawer = useCallback((key, value) => {
+    if (hasData(key)) {
+      setOpenDrawer((o) => ({ ...o, [key]: value ?? !o[key] }));
+    }
+  }, []);
+
+  return (
+    <LayoutContext.Provider value={{ ...openDrawer, handleDrawer }}>
+      {children}
+    </LayoutContext.Provider>
+  );
+};
 
 export const MediaContext = createContext();
 
@@ -18,5 +36,13 @@ export const MediaProvider = ({ children }) => {
     >
       {children}
     </MediaContext.Provider>
+  );
+};
+
+export const Providers = ({ children }) => {
+  return (
+    <MediaProvider>
+      <LayoutProvider>{children}</LayoutProvider>
+    </MediaProvider>
   );
 };

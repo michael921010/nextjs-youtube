@@ -11,7 +11,7 @@ import {
 const Section = withStyles((theme) => ({
   root: {
     display: "flex",
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("lg")]: {
       display: "none",
     },
   },

@@ -1,4 +1,11 @@
-import React, { useState, useContext, useRef, useEffect, useMemo } from "react";
+import React, {
+  useState,
+  useContext,
+  useRef,
+  useEffect,
+  useMemo,
+  useCallback,
+} from "react";
 import PropTypes from "prop-types";
 import { Drawer, Hidden } from "@material-ui/core";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
@@ -45,6 +52,10 @@ function ResponsiveDrawer(props) {
     return desktopOpen ? drawerWidth.lg : mdWidth;
   }, [isSmUp, isMdDown, mdWidth, desktopOpen]);
 
+  const handleToggle = useCallback(() => {
+    handleDrawer("mobileOpen");
+  }, []);
+
   useEffect(() => {
     if (mdRef.current !== null) {
       setMdWidth(mdRef.current.getBoundingClientRect().width);
@@ -64,7 +75,7 @@ function ResponsiveDrawer(props) {
             container={container}
             variant="temporary"
             open={mobileOpen}
-            onClose={handleDrawer}
+            onClose={handleToggle}
             ModalProps={{ keepMounted }}
           >
             <DrawerList temporary />
