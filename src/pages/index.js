@@ -37,12 +37,9 @@ export default function Home({ data }) {
                 resourceId = {},
               } = snippet;
               return (
-                <Link
-                  href={{ pathname: "/watch", query: { v: id.videoId } }}
-                  key={id.videoId}
-                  className={classes.link}
-                >
+                <div className={classes.link} key={id.videoId}>
                   <Card
+                    id={id.videoId}
                     title={title}
                     channel={{
                       id: snippet?.channelId,
@@ -54,7 +51,7 @@ export default function Home({ data }) {
                       src: thumbnails.medium?.url,
                     }}
                   />
-                </Link>
+                </div>
               );
             })}
           </ul>

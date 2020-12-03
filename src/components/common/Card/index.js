@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MyCard({ title, channel, image }) {
+export default function MyCard({ id, title, channel, image }) {
   const width = image?.width ?? 0;
   const height = image?.height ?? 0;
 
@@ -49,31 +49,38 @@ export default function MyCard({ title, channel, image }) {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          component="img"
-          alt="Contemplative Reptile"
-          width={width}
-          height={height}
-          image={image?.src}
-          title={title}
-        />
-
-        <CardContent>
-          <Typography
-            gutterBottom
-            component="p"
-            className={classes.title}
+        <Link href={{ pathname: "/watch", query: { v: id } }}>
+          <CardMedia
+            className={classes.media}
+            component="img"
+            alt="Contemplative Reptile"
+            width={width}
+            height={height}
+            image={image?.src}
             title={title}
-          >
-            {title}
-          </Typography>
-          <Link
-            href={{
-              pathname: "/channel/[channelId]",
-              query: { channelId: channel?.id },
-            }}
-          >
+          />
+        </Link>
+
+        <Link href={{ pathname: "/watch", query: { v: id } }}>
+          <CardContent style={{ paddingBottom: 0 }}>
+            <Typography
+              gutterBottom
+              component="p"
+              className={classes.title}
+              title={title}
+            >
+              {title}
+            </Typography>
+          </CardContent>
+        </Link>
+
+        <Link
+          href={{
+            pathname: "/channel/[channelId]",
+            query: { channelId: channel?.id },
+          }}
+        >
+          <CardContent style={{ paddingTop: 0 }}>
             <Typography
               variant="body2"
               component="p"
@@ -82,8 +89,8 @@ export default function MyCard({ title, channel, image }) {
             >
               {channel?.title}
             </Typography>
-          </Link>
-        </CardContent>
+          </CardContent>
+        </Link>
       </CardActionArea>
     </Card>
   );
