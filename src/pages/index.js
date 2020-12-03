@@ -1,6 +1,6 @@
-import { Link } from "@next";
 import { makeStyles } from "@material-ui/core/styles";
-import { Layout, Card, Drawer } from "components/common";
+import { Layout, Drawer } from "components/common";
+import { Card } from "components/pages/home";
 import * as youtube from "apis/youtube";
 import data from "data/search.json";
 
@@ -30,21 +30,13 @@ export default function Home({ data }) {
         ) : (
           <ul className={classes.list}>
             {data.items.map(({ id, snippet = {} }) => {
-              const {
-                title,
-                channelTitle,
-                thumbnails = {},
-                resourceId = {},
-              } = snippet;
+              const { title, channelId, thumbnails = {} } = snippet;
               return (
                 <div className={classes.link} key={id.videoId}>
                   <Card
                     id={id.videoId}
                     title={title}
-                    channel={{
-                      id: snippet?.channelId,
-                      title: snippet?.channelTitle,
-                    }}
+                    channelId={channelId}
                     image={{
                       width: thumbnails.medium?.width,
                       height: thumbnails.medium?.height,
@@ -71,7 +63,7 @@ export async function getServerSideProps() {
       const res = await youtube.search({
         q: "Chris Paul",
       });
-      console.log(res);
+
       if (res?.status === 200) {
         return {
           props: {

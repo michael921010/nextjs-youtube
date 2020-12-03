@@ -1,6 +1,7 @@
 import { GET } from "./common";
 
-const API_KEY = process.env.YOUTUBE_API_KEY;
+// const API_KEY = process.env.YOUTUBE_API_KEY;
+const API_KEY = "AIzaSyBIjsExWcIVtcwR9OTgAFvPZ1mi5Y94s2I";
 const API_DOMAIN = `https://www.googleapis.com/youtube/v3`;
 
 const searchPart = ["id", "snippet"].join(",");
@@ -28,10 +29,29 @@ const videoPart = [
 // const videoPart =
 //   "contentDetails,fileDetails,liveStreamingDetails,processingDetails,status,suggestions,topicDetails";
 
-export const videos = (id) => {
-  return GET(`${API_DOMAIN}/videos`, {
+export const videos = (id) =>
+  GET(`${API_DOMAIN}/videos`, {
     part: videoPart, // 必填，把需要的資訊列出來
     id,
-    key: API_KEY, // 使用 API 只能取得公開的播放清單
+    key: API_KEY,
   });
-};
+
+const channelPart = [
+  "id",
+  "snippet",
+  "statistics",
+  "localizations",
+  "topicDetails",
+  // "auditDetails",
+  "brandingSettings",
+  "contentDetails",
+  "contentOwnerDetails",
+  "status",
+].join(",");
+
+export const channels = (id) =>
+  GET(`${API_DOMAIN}/channels`, {
+    part: channelPart, // 必填，把需要的資訊列出來
+    id,
+    key: API_KEY,
+  });

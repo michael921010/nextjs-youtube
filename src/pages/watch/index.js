@@ -7,7 +7,6 @@ import { videos } from "apis/youtube";
 import { amtFmt, getBy, hasData } from "utils";
 import { dateFmt } from "utils/date";
 import { Description } from "components/pages/watch";
-import data from "data/videos.json";
 
 const useStyle = makeStyles((theme) => ({
   root: {
@@ -66,7 +65,6 @@ const useStyle = makeStyles((theme) => ({
 }));
 
 const defaultQuantity = 4;
-const virtual = !true;
 export default function Watch({ data }) {
   const [expanded, setExpanded] = useState(false);
   const showQuantity = useMemo(() => (expanded ? Infinity : defaultQuantity), [
@@ -131,29 +129,24 @@ export default function Watch({ data }) {
 export async function getServerSideProps(ctx) {
   const videoId = ctx.query?.v;
 
-  if (virtual) {
-    return { props: { data } };
-  } else {
-    try {
-      const res = await videos(videoId);
-      console.log(res);
+  try {
+    const res = await videos(videoId);
 
-      const item = getBy("find")({ id: videoId })(res.data?.items ?? []);
-      if (res?.status === 200 && hasData(item)) {
-        return {
-          props: {
-            data: item,
-          },
-        };
-      } else {
-        throw "";
-      }
-    } catch (err) {
+    const item = getBy("find")({ id: videoId })(res.data?.items ?? []);
+    if (res?.status === 200 && hasData(item)) {
       return {
         props: {
-          data: {},
+          data: item,
         },
       };
+    } else {
+      throw "";
     }
+  } catch (err) {
+    return {
+      props: {
+        data: {},
+      },
+    };
   }
 }

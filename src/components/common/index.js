@@ -1,8 +1,8 @@
 import Layout from "./Layout";
 import SearchBar from "./SearchBar";
-import Card from "./Card";
 import Drawer from "./Drawer";
+import ChannelTitle from "./ChannelTitle";
 
-export { Layout, SearchBar, Card, Drawer };
+export { Layout, SearchBar, Drawer, ChannelTitle };
 
 export * from "./context";
