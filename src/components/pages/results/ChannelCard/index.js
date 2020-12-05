@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Card,
@@ -7,19 +7,11 @@ import {
   CardMedia,
   Typography,
   Button,
-  withStyles,
 } from "@material-ui/core";
-import { Skeleton } from "@material-ui/lab";
-import { BlockRounded } from "@material-ui/icons";
+import { Skeleton } from "components/common";
 import { Link } from "@next";
-import { hasData, getBy, amtFmt } from "utils";
-import * as youtube from "apis/youtube";
-
-const MySkeleton = withStyles((theme) => ({
-  root: {
-    marginTop: theme.spacing(1),
-  },
-}))(Skeleton);
+import { useChannel } from "utils/hooks";
+import { hasData, amtFmt } from "utils";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   skeleton: {
     width: "100%",
-    height: "100%",
+    height: "100% !important",
   },
   avatar: {
     width: theme.spacing(17),
@@ -75,6 +67,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
   },
+  statisticsSkeleton: {
+    marginTop: theme.spacing(1),
+  },
   statistics: {
     width: "fit-content",
     overflow: `hidden`,
@@ -107,51 +102,19 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
+  subsSkeleton: {
+    borderRadius: 5,
+    marginTop: theme.spacing(1),
+  },
 }));
 
 export default function ChannelCard({ id, image }) {
   const classes = useStyles();
 
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
-  const [title, setTitle] = useState(null);
-  const [statistics, setStatistics] = useState(null);
-  const [avatarUrl, setAvatarUrl] = useState(null);
-
-  useEffect(() => {
-    (async function () {
-      try {
-        if (hasData(id)) {
-          setLoading(true);
-          setError(false);
-
-          const { status, data } = await youtube.channels(id);
-
-          if (status === 200) {
-            const { statistics, snippet } = getBy("find")({ id })(data.items);
-            const { thumbnails } = snippet;
-            const avatarUrl = thumbnails?.high?.url ?? null;
-
-            if (hasData(avatarUrl)) {
-              setAvatarUrl(avatarUrl);
-              setTitle(snippet?.title);
-              setStatistics(statistics);
-            } else {
-              throw "";
-            }
-          } else {
-            throw "";
-          }
-        } else {
-          throw "";
-        }
-      } catch (err) {
-        setError(true);
-      } finally {
-        setLoading(false);
-      }
-    })();
-  }, []);
+  const { error, loading, channel } = useChannel(id);
+  const avatarUrl = channel?.snippet?.thumbnails?.default?.url ?? null;
+  const title = channel?.snippet?.title ?? null;
+  const statistics = channel?.statistics ?? null;
 
   return (
     <Card className={classes.root}>
@@ -161,11 +124,11 @@ export default function ChannelCard({ id, image }) {
         <CardActionArea className={classes.button} component="div">
           <div className={classes.media}>
             <div className={classes.avatar}>
-              {error ? (
-                <BlockRounded className={classes.skeleton} color="error" />
-              ) : loading || !hasData(image?.src) ? (
-                <Skeleton variant="circle" className={classes.skeleton} />
-              ) : (
+              <Skeleton
+                loading={error || loading || !hasData(image?.src)}
+                className={classes.skeleton}
+                variant="circle"
+              >
                 <CardMedia
                   className={classes.avatarImage}
                   component="img"
@@ -173,14 +136,16 @@ export default function ChannelCard({ id, image }) {
                   image={image?.src}
                   title={title}
                 />
-              )}
+              </Skeleton>
             </div>
           </div>
 
           <CardContent className={classes.content}>
-            {error || loading || !hasData(statistics) ? (
-              <MySkeleton height={10} width={100} />
-            ) : (
+            <Skeleton
+              loading={error || loading || !hasData(statistics)}
+              height={10}
+              width={200}
+            >
               <Typography
                 gutterBottom
                 component="p"
@@ -189,47 +154,47 @@ export default function ChannelCard({ id, image }) {
               >
                 {title}
               </Typography>
-            )}
+            </Skeleton>
 
             <div className={classes.statisticsContent}>
-              {error || loading || !hasData(statistics) ? (
-                <MySkeleton height={10} width={200} />
-              ) : (
-                <>
-                  {!(statistics?.hiddenSubscriberCount ?? true) && (
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      className={classes.statistics}
-                    >
-                      {amtFmt(statistics?.subscriberCount, 0)} 位訂閱者・
-                    </Typography>
-                  )}
+              <Skeleton
+                loading={error || loading || !hasData(statistics)}
+                height={10}
+                width={300}
+                className={classes.statisticsSkeleton}
+              >
+                {!(statistics?.hiddenSubscriberCount ?? true) && (
                   <Typography
                     variant="body2"
                     component="p"
                     className={classes.statistics}
                   >
-                    {amtFmt(statistics?.videoCount, 0)} 部影片
+                    {amtFmt(statistics?.subscriberCount, 0)} 位訂閱者・
                   </Typography>
-                </>
-              )}
+                )}
+                <Typography
+                  variant="body2"
+                  component="p"
+                  className={classes.statistics}
+                >
+                  {amtFmt(statistics?.videoCount, 0)} 部影片
+                </Typography>
+              </Skeleton>
             </div>
           </CardContent>
 
           <div className={classes.subscribe}>
-            {error || loading || !hasData(statistics) ? (
-              <MySkeleton
-                variant="rect"
-                height={32}
-                width={56}
-                style={{ borderRadius: 5 }}
-              />
-            ) : (
+            <Skeleton
+              loading={error || loading || !hasData(statistics)}
+              variant="rect"
+              height={32}
+              width={56}
+              className={classes.subsSkeleton}
+            >
               <Button variant="contained" color="primary">
                 訂閱
               </Button>
-            )}
+            </Skeleton>
           </div>
         </CardActionArea>
       </Link>

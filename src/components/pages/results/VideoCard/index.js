@@ -8,7 +8,8 @@ import {
   Typography,
 } from "@material-ui/core";
 import { Link } from "@next";
-import { ChannelTitle } from "components/common";
+import { hasData } from "utils";
+import { ChannelTitle, Skeleton } from "components/common";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,6 +25,18 @@ const useStyles = makeStyles((theme) => ({
     width,
     height,
   }),
+  mediaImage: ({ width, height }) => ({
+    width,
+    height,
+  }),
+  skeleton: ({ width, height }) => ({
+    width,
+    height,
+  }),
+  titleSkeleton: {
+    marginTop: theme.spacing(2),
+    marginLeft: theme.spacing(2),
+  },
   title: {
     width: "fit-content",
     overflow: `hidden`,
@@ -37,6 +50,9 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       color: theme.palette.text.primary,
     },
+  },
+  desSkeleton: {
+    marginLeft: theme.spacing(2),
   },
   description: {
     width: "fit-content",
@@ -68,46 +84,68 @@ export default function VideoCard({
   return (
     <Card className={classes.root}>
       <CardActionArea className={classes.button}>
-        <Link href={{ pathname: "/watch", query: { v: id } }}>
-          <CardMedia
-            className={classes.media}
-            component="img"
-            alt={title}
-            width={width}
-            height={height}
-            image={image?.src}
-            title={title}
-          />
-        </Link>
+        <div className={classes.media}>
+          <Skeleton
+            loading={!hasData(image?.src)}
+            className={classes.skeleton}
+            variant="rect"
+          >
+            <Link href={{ pathname: "/watch", query: { v: id } }}>
+              <CardMedia
+                className={classes.mediaImage}
+                component="img"
+                alt={title}
+                width={width}
+                height={height}
+                image={image?.src}
+                title={title}
+              />
+            </Link>
+          </Skeleton>
+        </div>
 
         <div>
-          <Link href={{ pathname: "/watch", query: { v: id } }}>
-            <CardContent style={{ paddingBottom: 0 }}>
-              <Typography
-                gutterBottom
-                component="p"
-                className={classes.title}
-                title={title}
-              >
-                {title}
-              </Typography>
-            </CardContent>
-          </Link>
+          <Skeleton
+            loading={!hasData(title)}
+            width={300}
+            height={10}
+            className={classes.titleSkeleton}
+          >
+            <Link href={{ pathname: "/watch", query: { v: id } }}>
+              <CardContent style={{ paddingBottom: 0 }}>
+                <Typography
+                  gutterBottom
+                  component="p"
+                  className={classes.title}
+                  title={title}
+                >
+                  {title}
+                </Typography>
+              </CardContent>
+            </Link>
+          </Skeleton>
 
           <ChannelTitle id={channelId} />
 
-          <Link href={{ pathname: "/watch", query: { v: id } }}>
-            <CardContent style={{ paddingTop: 0 }}>
-              <Typography
-                variant="body2"
-                component="p"
-                className={classes.description}
-                title={description}
-              >
-                {description}
-              </Typography>
-            </CardContent>
-          </Link>
+          <Skeleton
+            loading={!hasData(description)}
+            width={300}
+            height={10}
+            className={classes.desSkeleton}
+          >
+            <Link href={{ pathname: "/watch", query: { v: id } }}>
+              <CardContent style={{ paddingTop: 0 }}>
+                <Typography
+                  variant="body2"
+                  component="p"
+                  className={classes.description}
+                  title={description}
+                >
+                  {description}
+                </Typography>
+              </CardContent>
+            </Link>
+          </Skeleton>
         </div>
       </CardActionArea>
     </Card>

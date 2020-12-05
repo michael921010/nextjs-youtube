@@ -67,3 +67,66 @@ export const amtFmt = (amount, digits = 2) =>
         .toFixed(digits)
         .replace(/(\d)(?=(\d{3})+(?!\d))/g, `$1,`)
     : ``;
+
+const regFilter = (reg, { msg, type }, args) => {
+  const newType = args?.type;
+  const skipTheSame = args?.skipTheSame;
+  const msgLen = msg.length;
+
+  let indexs = R.pluck("index")([...msg.matchAll(reg)]);
+
+  if (skipTheSame) {
+    indexs = indexs.reduce((res, index) => {
+      const preIndex = res[res.length - 1];
+      if (preIndex + 1 === index) {
+        return [...res];
+      } else {
+        return [...res, index];
+      }
+    }, []);
+  }
+
+  let filter = [];
+  if (hasData(indexs)) {
+    filter.push({ type, msg: msg.slice(0, indexs[0]) });
+
+    for (let i = 0, max = indexs.length; i < max; i++) {
+      const index = indexs[i];
+      const nextIndex = i === max - 1 ? msgLen : indexs[i + 1];
+
+      if (newType === "hash") {
+        let sliceIndex = nextIndex;
+        for (let j = index + 1; j < nextIndex; j++) {
+          if (/\s/.test(msg[j])) {
+            sliceIndex = j;
+            break;
+          }
+        }
+        filter.push({ type: newType, msg: msg.slice(index, sliceIndex) });
+        filter.push({ type, msg: msg.slice(sliceIndex, nextIndex) });
+      } else {
+        filter.push({ type: newType, msg: msg.slice(index, nextIndex) });
+      }
+    }
+  } else {
+    filter.push({ type, msg });
+  }
+  return filter;
+};
+
+export const descriptionFmt = (msg, regs = []) => {
+  let result = [];
+  if (typeof msg === "string") {
+    result.push({ type: "text", msg });
+  } else {
+    result = msg;
+  }
+
+  result = regs.reduce(
+    (rtn, { reg, ...args }) =>
+      rtn.reduce((res, item) => [...res, ...regFilter(reg, item, args)], []),
+    result
+  );
+
+  return result;
+};

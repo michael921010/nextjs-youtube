@@ -1,6 +1,7 @@
 import _Head from "next/head";
 import _Link from "next/link";
 import _Image from "next/image";
+import getConfig from "next/config";
 
 const Head = ({ title, children }) => (
   <_Head>
@@ -17,4 +18,6 @@ const Link = ({ href, children, className }) => (
 
 const Image = _Image;
 
-export { Head, Link, Image };
+const { publicRuntimeConfig: config } = getConfig();
+
+export { Head, Link, Image, config };

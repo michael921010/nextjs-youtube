@@ -1,7 +1,7 @@
 import { GET } from "./common";
+import { config } from "@next";
 
-// const API_KEY = process.env.YOUTUBE_API_KEY;
-const API_KEY = "AIzaSyBIjsExWcIVtcwR9OTgAFvPZ1mi5Y94s2I";
+const API_KEY = config.YOUTUBE_API_KEY;
 const API_DOMAIN = `https://www.googleapis.com/youtube/v3`;
 
 const searchPart = ["id", "snippet"].join(",");
