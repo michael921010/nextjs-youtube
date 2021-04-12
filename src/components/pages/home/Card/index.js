@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     "-webkit-box-orient": `vertical`,
     "-webkit-line-clamp": 2,
     color: theme.palette.grey["800"],
-    fontWeight: theme.fonts.bold,
+    fontWeight: theme.typography.fontWeightMedium,
 
     "&:hover": {
       color: theme.palette.text.primary,
@@ -125,7 +125,7 @@ export default function MyCard({ id, title, channelId, image }) {
               component="p"
               className={classes.viewCount}
             >
-              觀看次數: {amtFmt(statistics?.viewCount, 0)} 次
+              觀看次數: {amtFmt(statistics?.viewCount)} 次
             </Typography>
           </Skeleton>
         </CardContent>

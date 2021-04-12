@@ -4,7 +4,7 @@ import { Card } from "components/pages/home";
 import * as youtube from "apis/youtube";
 import data from "data/search.json";
 
-const useStyle = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   list: {
     width: "100%",
     display: "flex",
@@ -20,7 +20,7 @@ const useStyle = makeStyles((theme) => ({
 
 const virtual = true;
 export default function Home({ data }) {
-  const classes = useStyle();
+  const classes = useStyles();
   console.log(data);
   return (
     <Layout>

@@ -5,7 +5,7 @@ import { Layout, Drawer } from "components/common";
 import { VideoCard, ChannelCard } from "components/pages/results";
 import * as youtube from "apis/youtube";
 
-const useStyle = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   list: {
     width: "100%",
     display: "flex",
@@ -18,7 +18,7 @@ const useStyle = makeStyles((theme) => ({
 }));
 
 export default function Results({ data }) {
-  const classes = useStyle();
+  const classes = useStyles();
   const router = useRouter();
   console.log(data);
   return (

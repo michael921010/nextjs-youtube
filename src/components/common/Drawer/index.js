@@ -9,6 +9,7 @@ import React, {
 import PropTypes from "prop-types";
 import { Drawer, Hidden } from "@material-ui/core";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
+import c from "classnames";
 import { LayoutContext, MediaContext } from "components/common";
 import { DrawerList } from "./common";
 
@@ -28,8 +29,10 @@ const useStyles = makeStyles((theme) => ({
     flexShrink: 0,
   },
   content: {
-    flexGrow: 1,
-    padding: theme.spacing(3),
+    "&.container": {
+      flexGrow: 1,
+      padding: theme.spacing(3),
+    },
   },
 }));
 
@@ -94,7 +97,9 @@ function ResponsiveDrawer(props) {
           </LgDrawer>
         </Hidden>
       </nav>
-      <main className={classes.content}>{children}</main>
+      <main className={c(classes.content, { container: props.container })}>
+        {children}
+      </main>
     </div>
   );
 }
@@ -105,6 +110,11 @@ ResponsiveDrawer.propTypes = {
    * You won't need it on your project.
    */
   window: PropTypes.func,
+  container: PropTypes.bool,
+};
+
+ResponsiveDrawer.defaultProps = {
+  container: true,
 };
 
 export default ResponsiveDrawer;

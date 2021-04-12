@@ -32,7 +32,7 @@ const SearchIcon = withStyles((theme) => ({
   },
 }))(Search);
 
-const useStyle = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
     display: "flex",
@@ -71,7 +71,7 @@ const useStyle = makeStyles((theme) => ({
 }));
 
 export default function SearchBar({ placeholder, value, onChange, onSearch }) {
-  const classes = useStyle();
+  const classes = useStyles();
 
   const handleChange = useCallback(
     (e) => {

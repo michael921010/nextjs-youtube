@@ -61,7 +61,7 @@ export const getBy = (func) => R.compose(funcMapper.get(func), R.whereEq);
 
 // usage:
 //   1234567.89 or '1234567.89' -> '1,234,567.89'
-export const amtFmt = (amount, digits = 2) =>
+export const amtFmt = (amount, digits = 0) =>
   hasData(amount)
     ? parseFloat(amount)
         .toFixed(digits)

@@ -4,14 +4,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import c from "classnames";
 import { config } from "@next";
 
-const useStyle = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   error: {
     backgroundColor: theme.palette.error.main,
   },
   loading: {},
 }));
 
-const skeleton = Boolean(config.ENV_NAME === "test");
+const skeleton = Boolean(process.env.ENV === "test");
 
 export default function MySkeleton({
   error,
@@ -20,7 +20,7 @@ export default function MySkeleton({
   children,
   ...props
 }) {
-  const classes = useStyle();
+  const classes = useStyles();
 
   if (skeleton) {
     return (

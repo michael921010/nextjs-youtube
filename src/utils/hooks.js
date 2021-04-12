@@ -3,7 +3,7 @@ import { hasData, getBy } from "utils";
 import { config } from "@next";
 import * as youtube from "apis/youtube";
 
-const skeleton = Boolean(config.ENV_NAME === "test");
+const skeleton = Boolean(config.ENV === "test");
 
 const useYoutubeAPI = (func, args) => {
   const [error, setError] = useState(false);
@@ -60,4 +60,26 @@ export const useVideo = (videoId) => {
   const video = getBy("find")({ id: videoId })(videos?.items ?? []);
 
   return { video, ...args };
+};
+
+export const useChannelSections = (channelId) => {
+  const { data, ...args } = useYoutubeAPI(youtube.channelSections, channelId);
+  const channelSections = data?.items ?? [];
+
+  return { channelSections, ...args };
+};
+
+export const usePlaylists = (playlistId) => {
+  return useYoutubeAPI(youtube.playlists, playlistId);
+};
+
+export const usePlaylist = (playlistId) => {
+  const { data: playlists, ...args } = usePlaylists(playlistId);
+  const playlist = getBy("find")({ id: playlistId })(playlists?.items ?? []);
+
+  return { playlist, ...args };
+};
+
+export const usePlaylistItems = (playlistId) => {
+  return useYoutubeAPI(youtube.playlistItems, playlistId);
 };

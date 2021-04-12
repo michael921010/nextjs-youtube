@@ -9,7 +9,7 @@ const rags = [
   { reg: /http/g, type: "url" },
 ];
 
-const useStyle = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   text: {
     minHeight: theme.spacing(2),
     whiteSpace: "pre-wrap",
@@ -18,7 +18,7 @@ const useStyle = makeStyles((theme) => ({
 }));
 
 export default function Description({ msg = "" }) {
-  const classes = useStyle();
+  const classes = useStyles();
 
   const fmtMsg = descriptionFmt(msg, rags);
 

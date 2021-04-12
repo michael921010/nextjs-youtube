@@ -2,7 +2,7 @@ import { Link } from "@next";
 import { makeStyles } from "@material-ui/core/styles";
 import c from "classnames";
 
-const useStyle = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   text: {
     minHeight: theme.spacing(2),
     whiteSpace: "pre-wrap",
@@ -12,7 +12,7 @@ const useStyle = makeStyles((theme) => ({
 }));
 
 export default function Url({ url, className }) {
-  const classes = useStyle();
+  const classes = useStyles();
   return (
     <Link href={url} className={c(classes.text, className)}>
       {url}

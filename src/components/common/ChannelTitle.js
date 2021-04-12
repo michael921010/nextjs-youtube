@@ -6,7 +6,7 @@ import { hasData } from "utils";
 import { useChannel } from "utils/hooks";
 
 const avatarSize = { width: 30, height: 30 };
-const useStyle = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   content: {
     paddingTop: `${theme.spacing(1)}px !important`,
     paddingBottom: `${theme.spacing(1)}px !important`,
@@ -39,7 +39,7 @@ const useStyle = makeStyles((theme) => ({
 }));
 
 export default function ChannelTitle({ id }) {
-  const classes = useStyle();
+  const classes = useStyles();
 
   const { error, loading, channel } = useChannel(id);
   const avatarUrl = channel?.snippet?.thumbnails?.default?.url ?? null;

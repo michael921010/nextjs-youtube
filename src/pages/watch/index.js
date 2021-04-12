@@ -9,7 +9,7 @@ import { dateFmt } from "utils/date";
 import { useChannel } from "utils/hooks";
 import { Description } from "components/pages/watch";
 
-const useStyle = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.system,
     padding: theme.spacing(3, 7),
@@ -103,7 +103,7 @@ export default function Watch({ data }) {
 
   const [expanded, setExpanded] = useState(false);
   const showExpand = snippet?.description.length > defaultQuantity;
-  const classes = useStyle({ expanded: showExpand ? expanded : true });
+  const classes = useStyles({ expanded: showExpand ? expanded : true });
 
   return (
     <Layout>
@@ -127,7 +127,7 @@ export default function Watch({ data }) {
           >
             <div className={classes.explain}>
               <Typography className={classes.viewCount}>
-                觀看次數：{amtFmt(statistics?.viewCount, 0)} 次
+                觀看次數：{amtFmt(statistics?.viewCount)} 次
               </Typography>
               {snippet?.publishedAt && (
                 <Typography className={classes.publishedTime}>

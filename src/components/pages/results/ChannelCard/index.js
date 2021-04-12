@@ -177,7 +177,7 @@ export default function ChannelCard({ id, image }) {
                   component="p"
                   className={classes.statistics}
                 >
-                  {amtFmt(statistics?.videoCount, 0)} 部影片
+                  {amtFmt(statistics?.videoCount)} 部影片
                 </Typography>
               </Skeleton>
             </div>

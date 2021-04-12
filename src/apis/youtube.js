@@ -1,7 +1,6 @@
 import { GET } from "./common";
-import { config } from "@next";
 
-const API_KEY = config.YOUTUBE_API_KEY;
+const API_KEY = process.env.YOUTUBE_API_KEY;
 const API_DOMAIN = `https://www.googleapis.com/youtube/v3`;
 
 const searchPart = ["id", "snippet"].join(",");
@@ -53,5 +52,52 @@ export const channels = (id) =>
   GET(`${API_DOMAIN}/channels`, {
     part: channelPart, // 必填，把需要的資訊列出來
     id,
+    key: API_KEY,
+  });
+
+const channelSectionPart = [
+  "id",
+  "snippet",
+  "contentDetails",
+  "localizations",
+  "targeting",
+].join(",");
+
+export const channelSections = (channelId) =>
+  GET(`${API_DOMAIN}/channelSections`, {
+    part: channelSectionPart, // 必填，把需要的資訊列出來
+    channelId,
+    key: API_KEY,
+  });
+
+const playlistPart = [
+  "contentDetails",
+  "id",
+  "localizations",
+  "player",
+  "snippet",
+  "status",
+].join(",");
+
+export const playlists = (id) =>
+  GET(`${API_DOMAIN}/playlists`, {
+    part: playlistPart, // 必填，把需要的資訊列出來
+    id,
+    key: API_KEY,
+  });
+
+const playlistItemPart = [
+  "contentDetails",
+  "id",
+  // "localizations",
+  // "player",
+  "snippet",
+  "status",
+].join(",");
+
+export const playlistItems = (playlistId) =>
+  GET(`${API_DOMAIN}/playlistItems`, {
+    part: playlistItemPart, // 必填，把需要的資訊列出來
+    playlistId,
     key: API_KEY,
   });
