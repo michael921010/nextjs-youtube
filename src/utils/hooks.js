@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { hasData, getBy } from "utils";
-import { config } from "@next";
 import * as youtube from "apis/youtube";
 
-const skeleton = Boolean(config.ENV === "test");
+const skeleton = Boolean(process.env.ENV === "test");
 
 const useYoutubeAPI = (func, args) => {
   const [error, setError] = useState(false);

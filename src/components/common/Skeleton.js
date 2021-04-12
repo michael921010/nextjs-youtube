@@ -2,7 +2,6 @@ import { Skeleton } from "@material-ui/lab";
 import { BlockRounded } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
 import c from "classnames";
-import { config } from "@next";
 
 const useStyles = makeStyles((theme) => ({
   error: {
