@@ -1,8 +1,7 @@
-const env = {
-  ENV_NAME: process.env.ENV_NAME,
-  YOUTUBE_API_KEY: process.env.YOUTUBE_API_KEY,
-};
+const ramda = require("ramda");
+
+const env = ramda.pick(["ENV", "YOUTUBE_API_KEY"])(process.env);
 
 module.exports = {
-  publicRuntimeConfig: env,
+  env,
 };
