@@ -6,6 +6,8 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import { CacheProvider } from "@emotion/react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import createCache from "@emotion/cache";
+import { GoogleServiceProvider } from "hooks";
+import { SnackbarProvider } from "notistack";
 import theme from "styles/theme";
 import { Providers } from "components/common";
 import { siteTitle } from "configs";
@@ -57,13 +59,17 @@ export default function MyApp(props) {
         <meta name="og:title" content={siteTitle} />
         <link rel="icon" href="/static/favicon.ico" />
       </Head>
-      <ThemeProvider theme={theme}>
-        <Providers>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <CssBaseline />
-          <Component {...pageProps} />
-        </Providers>
-      </ThemeProvider>
+      <SnackbarProvider>
+        <GoogleServiceProvider>
+          <ThemeProvider theme={theme}>
+            <Providers>
+              {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+              <CssBaseline />
+              <Component {...pageProps} />
+            </Providers>
+          </ThemeProvider>
+        </GoogleServiceProvider>
+      </SnackbarProvider>
     </CacheProvider>
   );
 }

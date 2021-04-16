@@ -93,8 +93,6 @@ const useStyles = makeStyles((theme) => ({
 
 const defaultQuantity = 4;
 export default function Watch({ data }) {
-  console.log(data);
-
   const { id, snippet, statistics, player } = data;
   const channelId = snippet?.channelId;
 

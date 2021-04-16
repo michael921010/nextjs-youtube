@@ -1,4 +1,4 @@
-import { useState, useCallback, createContext } from "react";
+import { useState, useCallback, createContext, useContext } from "react";
 import { useMediaQuery } from "@material-ui/core";
 import { hasData } from "utils";
 
@@ -21,6 +21,8 @@ export const LayoutProvider = ({ children }) => {
   );
 };
 
+export const useLayout = () => useContext(LayoutContext);
+
 export const MediaContext = createContext();
 
 export const MediaProvider = ({ children }) => {
@@ -38,6 +40,8 @@ export const MediaProvider = ({ children }) => {
     </MediaContext.Provider>
   );
 };
+
+export const useMedia = () => useContext(MediaContext);
 
 export const Providers = ({ children }) => {
   return (

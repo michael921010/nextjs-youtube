@@ -4,8 +4,9 @@ import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Menu } from "@material-ui/icons";
 import { useRouter } from "next/router";
-import { SearchBar, LayoutContext, MediaContext } from "components/common";
+import { SearchBar, useLayout, useMedia } from "components/common";
 import { siteTitle } from "configs";
+import { useGoogleService } from "hooks";
 import { DesktopMenu, MobileMenu } from "./common";
 
 const useStyles = makeStyles((theme) => ({
@@ -33,8 +34,9 @@ const useStyles = makeStyles((theme) => ({
 export default function MyAppBar({ children }) {
   const router = useRouter();
   const classes = useStyles();
-  const { isMdDown } = useContext(MediaContext);
-  const { handleDrawer } = useContext(LayoutContext);
+  const { isMdDown } = useMedia();
+  const { authChecked } = useGoogleService();
+  const { handleDrawer } = useLayout();
 
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -80,7 +82,7 @@ export default function MyAppBar({ children }) {
           />
 
           <div className={classes.grow} />
-          {isMdDown ? <MobileMenu /> : <DesktopMenu />}
+          {authChecked && (isMdDown ? <MobileMenu /> : <DesktopMenu />)}
         </Toolbar>
       </AppBar>
 

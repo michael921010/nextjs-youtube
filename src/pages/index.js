@@ -24,7 +24,7 @@ export default function Home({ data }) {
     <Layout>
       <Drawer>
         <ul className={classes.list}>
-          {data.items.map(({ id, snippet = {} }) => {
+          {data?.items?.map(({ id, snippet = {} }) => {
             const { title, channelId, thumbnails = {} } = snippet;
             return (
               <div className={classes.link} key={id.videoId}>
@@ -48,8 +48,10 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps() {
+  return { props: { data: {} } };
+
   try {
-    const res = await youtube.search();
+    const res = await youtube.search({ maxResults: 12 });
 
     if (res?.status === 200) {
       return {

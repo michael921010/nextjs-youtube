@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import { Drawer, Hidden } from "@material-ui/core";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import c from "classnames";
-import { LayoutContext, MediaContext } from "components/common";
+import { useLayout, useMedia } from "components/common";
 import { DrawerList } from "./common";
 
 const drawerWidth = { md: 92, lg: 240 };
@@ -31,15 +31,14 @@ const useStyles = makeStyles((theme) => ({
   content: {
     "&.container": {
       flexGrow: 1,
-      padding: theme.spacing(3),
     },
   },
 }));
 
 function ResponsiveDrawer(props) {
   const { window, children } = props;
-  const { isSmUp, isMdDown, isLgDown: keepMounted } = useContext(MediaContext);
-  const { mobileOpen, desktopOpen, handleDrawer } = useContext(LayoutContext);
+  const { isSmUp, isMdDown, isLgDown: keepMounted } = useMedia();
+  const { mobileOpen, desktopOpen, handleDrawer } = useLayout();
 
   const mdRef = useRef(null);
   const [mdWidth, setMdWidth] = useState(drawerWidth.md);
