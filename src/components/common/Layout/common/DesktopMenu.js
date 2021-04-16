@@ -1,17 +1,15 @@
 import { useState, useCallback } from "react";
-import {
-  IconButton,
-  Badge,
-  MenuItem,
-  Menu,
-  Box,
-  Typography,
-  ButtonBase,
-} from "@material-ui/core";
+import { IconButton, Badge, MenuItem, Menu, Box } from "@material-ui/core";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
-import { Notifications, AccountCircle, Mail } from "@material-ui/icons";
+import {
+  Notifications,
+  AccountCircle,
+  Mail,
+  ExitToAppRounded,
+} from "@material-ui/icons";
 import { useGoogleService } from "hooks";
-import c from "classnames";
+import { hasData } from "utils";
+import SignInButton from "./SignInButton";
 
 const Section = withStyles((theme) => ({
   root: {
@@ -23,15 +21,10 @@ const Section = withStyles((theme) => ({
 }))(Box);
 
 const useStyles = makeStyles((theme) => ({
-  signIn: {
-    cursor: "pointer",
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    // border: `1px solid ${theme.palette.common.white}`,
-    borderRadius: 4,
-    padding: theme.spacing(0, 1.5),
-    marginLeft: theme.spacing(1),
+  avatar: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
   },
 }));
 
@@ -42,6 +35,7 @@ export default function DesktopMenu() {
     signOutAuth,
     signInAuth,
     requesting,
+    profile,
   } = useGoogleService();
   const [anchorEl, setAnchorEl] = useState(null);
   const isMenuOpen = Boolean(anchorEl);
@@ -75,33 +69,46 @@ export default function DesktopMenu() {
   return (
     <>
       <Section>
-        <IconButton aria-label="show mails" color="inherit">
-          <Badge badgeContent={4} color="secondary">
-            <Mail />
-          </Badge>
-        </IconButton>
+        {isAuthorized ? (
+          <>
+            <IconButton aria-label="show mails" color="inherit">
+              <Badge badgeContent={4} color="secondary">
+                <Mail />
+              </Badge>
+            </IconButton>
 
-        <IconButton aria-label="show notifications" color="inherit">
-          <Badge badgeContent={17} color="secondary">
-            <Notifications />
-          </Badge>
-        </IconButton>
+            <IconButton aria-label="show notifications" color="inherit">
+              <Badge badgeContent={17} color="secondary">
+                <Notifications />
+              </Badge>
+            </IconButton>
 
-        <IconButton
-          className={c({ [classes.signIn]: !isAuthorized })}
-          edge="end"
-          aria-label="account of current user"
-          aria-controls={menuId}
-          aria-haspopup="true"
-          color="inherit"
-          disabled={!isAuthorized && requesting}
-          onClick={isAuthorized ? handleMenuOpen : handleAuth(true)}
-        >
-          {!isAuthorized && (
-            <Typography style={{ marginRight: 4 }}>Sign In</Typography>
-          )}
-          <AccountCircle />
-        </IconButton>
+            <IconButton
+              edge="end"
+              aria-label="account of current user"
+              aria-controls={menuId}
+              aria-haspopup="true"
+              color="inherit"
+              onClick={handleMenuOpen}
+            >
+              {hasData(profile?.avatar) ? (
+                <img src={profile.avatar} className={classes.avatar} />
+              ) : (
+                <AccountCircle />
+              )}
+            </IconButton>
+          </>
+        ) : (
+          <SignInButton
+            edge="end"
+            aria-label="account of current user"
+            aria-controls={menuId}
+            aria-haspopup="true"
+            color="inherit"
+            disabled={requesting}
+            onClick={handleAuth(true)}
+          />
+        )}
       </Section>
       <Menu
         anchorEl={anchorEl}
@@ -112,9 +119,27 @@ export default function DesktopMenu() {
         open={isMenuOpen}
         onClose={handleMenuClose}
       >
-        <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+        <MenuItem onClick={handleMenuClose}>
+          <IconButton
+            aria-label="account of current user"
+            aria-controls={menuId}
+            aria-haspopup="true"
+            color="inherit"
+          >
+            <AccountCircle />
+          </IconButton>
+          <p>Profile</p>
+        </MenuItem>
         <MenuItem disabled={requesting} onClick={handleAuth(false)}>
-          Sign Out
+          <IconButton
+            aria-label="auth of current user"
+            aria-controls={menuId}
+            aria-haspopup="true"
+            color="inherit"
+          >
+            <ExitToAppRounded />
+          </IconButton>
+          <p>Sign Out</p>
         </MenuItem>
       </Menu>
     </>

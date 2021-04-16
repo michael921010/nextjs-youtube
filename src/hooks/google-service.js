@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { hasData } from "utils";
 import useSnackbar from "./snackbar";
 
 const Context = createContext();
@@ -7,6 +8,8 @@ const SCOPE = "https://www.googleapis.com/auth/youtube.force-ssl";
 const YOUR_API_KEY = process.env.YOUTUBE_API_KEY;
 const YOUR_CLIENT_ID = process.env.YOUTUBE_CLIENT_ID;
 
+const initProfile = { id: null, name: null, avatar: null, email: null };
+
 export const GoogleServiceProvider = ({ children }) => {
   const toast = useSnackbar();
 
@@ -14,6 +17,7 @@ export const GoogleServiceProvider = ({ children }) => {
   const [GoogleAuth, setGoogleAuth] = useState(null);
   const [isAuthorized, setIsAuthorized] = useState(false);
   const [authChecked, setAuthChecked] = useState(false);
+  const [profile, setProfile] = useState(initProfile);
   const [currentApiRequest, setCurrentApiRequest] = useState(null);
   const [requesting, setRequesting] = useState(false);
 
@@ -31,8 +35,9 @@ export const GoogleServiceProvider = ({ children }) => {
         setRequesting(true);
 
         const user = await GoogleAuth.signOut();
-        toast.success("Sign out successful.");
+        setProfile(initProfile);
 
+        toast.success("Sign out successful.");
         setRequesting(false);
       } else {
         setIsAuthorized(false);
@@ -51,8 +56,19 @@ export const GoogleServiceProvider = ({ children }) => {
         setRequesting(true);
 
         const user = await GoogleAuth.signIn();
-        toast.success("Sign in successful.");
 
+        // 查看個人身份資料
+        const profile = user.getBasicProfile();
+        if (hasData(profile)) {
+          setProfile({
+            id: profile.getId(),
+            name: profile.getName(),
+            avatar: profile.getImageUrl(),
+            email: profile.getEmail(),
+          });
+        }
+
+        toast.success("Sign in successful.");
         setRequesting(false);
       }
     } catch (err) {
@@ -82,6 +98,18 @@ export const GoogleServiceProvider = ({ children }) => {
 
       const user = _GoogleAuth.currentUser.get();
 
+      // 查看個人身份資料
+      const profile = user.getBasicProfile();
+      if (hasData(profile)) {
+        setProfile({
+          id: profile.getId(),
+          name: profile.getName(),
+          avatar: profile.getImageUrl(),
+          email: profile.getEmail(),
+        });
+      }
+
+      // 查看是否 有授權(已登入)
       const isAuthorized = user.hasGrantedScopes(SCOPE);
       setIsAuthorized(isAuthorized);
       setAuthChecked(true);
@@ -114,6 +142,7 @@ export const GoogleServiceProvider = ({ children }) => {
         signOutAuth,
         signInAuth,
         requesting,
+        profile,
       }}
     >
       {children}

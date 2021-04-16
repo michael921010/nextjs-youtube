@@ -1,20 +1,16 @@
 import { useState, useCallback } from "react";
-import {
-  IconButton,
-  Badge,
-  MenuItem,
-  Menu,
-  Box,
-  Typography,
-} from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
+import { IconButton, Badge, MenuItem, Menu, Box } from "@material-ui/core";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 import {
   Mail,
   Notifications,
   MoreVert,
   AccountCircle,
+  ExitToAppRounded,
 } from "@material-ui/icons";
+import { hasData } from "utils";
 import { useGoogleService } from "hooks";
+import SignInButton from "./SignInButton";
 
 const Section = withStyles((theme) => ({
   root: {
@@ -25,6 +21,14 @@ const Section = withStyles((theme) => ({
   },
 }))(Box);
 
+const useStyles = makeStyles((theme) => ({
+  avatar: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+  },
+}));
+
 const mobileMenuId = "primary-search-account-menu-mobile";
 export default function MobileMenu() {
   const {
@@ -32,9 +36,11 @@ export default function MobileMenu() {
     signInAuth,
     signOutAuth,
     requesting,
+    profile,
   } = useGoogleService();
   const [anchorEl, setAnchorEl] = useState(null);
   const isMenuOpen = Boolean(anchorEl);
+  const classes = useStyles();
 
   const handleMenuClose = useCallback((e) => {
     e.preventDefault();
@@ -64,15 +70,31 @@ export default function MobileMenu() {
   return (
     <>
       <Section>
-        <IconButton
-          aria-label="show more"
-          aria-controls={mobileMenuId}
-          aria-haspopup="true"
-          onClick={handleMenuOpen}
-          color="inherit"
-        >
-          <MoreVert />
-        </IconButton>
+        {isAuthorized ? (
+          <IconButton
+            aria-label="show more"
+            aria-controls={mobileMenuId}
+            aria-haspopup="true"
+            onClick={handleMenuOpen}
+            color="inherit"
+          >
+            {hasData(profile?.avatar) ? (
+              <img src={profile.avatar} className={classes.avatar} />
+            ) : (
+              <MoreVert />
+            )}
+          </IconButton>
+        ) : (
+          <SignInButton
+            edge="end"
+            aria-label="account of current user"
+            aria-controls={mobileMenuId}
+            aria-haspopup="true"
+            color="inherit"
+            disabled={requesting}
+            onClick={handleAuth(true)}
+          />
+        )}
       </Section>
       <Menu
         anchorEl={anchorEl}
@@ -117,9 +139,9 @@ export default function MobileMenu() {
             aria-haspopup="true"
             color="inherit"
           >
-            <AccountCircle />
+            <ExitToAppRounded />
           </IconButton>
-          <Typography>{isAuthorized ? "Sign Out" : "Sign In"}</Typography>
+          <p>{isAuthorized ? "Sign Out" : "Sign In"}</p>
         </MenuItem>
       </Menu>
     </>
